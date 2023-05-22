@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
+//import {FaBars,} from 'react-icons/fa';
+import {BiMenu} from 'react-icons/bi';
+import {BsWhatsapp} from 'react-icons/bs';
 import './Navbar.css';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import logo from '../../assets/logo.svg';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import whatsapp from '../../assets/whatsapp.svg';
+
 
 
 const Navbar: React.FC = () => {
@@ -27,10 +28,10 @@ const Navbar: React.FC = () => {
                     <li className="navbar-item">Localização</li>
                     <li className="navbar-item">
                         Fale Comigo
-                        <img src={whatsapp} alt="Whatsapp"/>
+                        <BsWhatsapp/>
                     </li>
                     <button className="menu-button" onClick={handleMenuClick}>
-                        <span className={`menu-icon ${isMenuOpen ? 'open' : ''}`}/>
+                       <BiMenu/>
                     </button>
                 </ul>
             </div>
