@@ -1,8 +1,12 @@
 import './App.css'
-import Navbar from "./componentes/navbar/Navbar.tsx";
+import CarouselComponent from "./componentes/banner-into/Carousel.tsx";
 
 function App() {
     return (
-        <Navbar/>
-    )}
+        <>
+            <CarouselComponent/>
+        </>
+    )
+}
+
 export default App
