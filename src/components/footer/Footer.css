@@ -1,0 +1,10 @@
+.footer {
+    background-color: var(--color-quaternary);
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
