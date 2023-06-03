@@ -2,7 +2,7 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    background-color: var(--color-quinary);
+    background-color: white;
     margin-top: 4em;
 
     color-scheme: light dark;
@@ -10,9 +10,9 @@
     --color-primary: rgba(70, 117, 101, 1);
     --color-secondary: rgba(132, 166, 138, 1);
     --color-tertiary: rgba(98, 144, 124, 1);
-    --color-quaternary: rgba(170, 189, 149, 1);
+    --color-quaternary: rgba(170, 189, 149, 0.62);
     --color-quinary: rgba(237, 216, 198, 1);
-    --color-sixth: rgba(240, 234, 227, 1);
+    --color-sixth: rgb(255, 255, 255);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
