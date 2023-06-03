@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-//import {FaBars,} from 'react-icons/fa';
 import {BiMenu} from 'react-icons/bi';
 import {BsWhatsapp} from 'react-icons/bs';
 import './Navbar.css';
