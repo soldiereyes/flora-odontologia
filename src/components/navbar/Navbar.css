@@ -1,11 +1,12 @@
 .navbar {
+    color: var(--color-primary);
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
-    color: var(--color-primary);
     height: 8em;
+    z-index: 100;
 }
 
 .navbar-container {
@@ -51,6 +52,7 @@
         margin: 10px 0;
         display: none;
     }
+
     .menu-button {
         display: block;
         font-size: 30px;
