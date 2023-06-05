@@ -1,39 +1,42 @@
-.section {
+.section-expert-section {
     display: flex;
     width: 100%;
-    height: 80vh;
+    height: 50vh;
+    margin-bottom: 10vh;
 }
 
 .column-1 {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--color-quinary);
+    justify-content:end;
+    background-color:white ;
 }
 .column-2 {
     flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
-.content_name_image {
+.content-name-image {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.card {
+.card-inner-expert-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     height: 100%;
+    width: 100%;
 }
 
 .circle {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: #f2f2f2;
     display: flex;
@@ -42,17 +45,20 @@
 }
 
 .image {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
-.text {
+.text-expert-section {
     font-size: 24px;
     color: var(--color-primary);
+    width: 900px;
+    text-indent:initial;
+    text-align: justify;
 }
 
-.description {
+.description-expert-section {
     font-size: 16px;
     margin-top: 10px;
     text-align: center;

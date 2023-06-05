@@ -9,19 +9,19 @@ interface SectionProps {
 
 const ExpertSection: React.FC<SectionProps> = ({imageUrl, text, description}) => {
     return (
-        <section className="section">
+        <section className="section-expert-section">
             <div className="column-1">
-                <div className="card">
-                    <div className="content_name_image">
+                <div className="card-inner-expert-section">
+                    <div className="content-name-image">
                         <div className="circle">
                             <img src={imageUrl} alt="Imagem" className="image"/>
                         </div>
-                        <div className='description'>{description}</div>
+                        <div className='description-expert-section'>{description}</div>
                     </div>
                 </div>
             </div>
             <div className="column-2">
-                <div className="text">{text}</div>
+                <div className="text-expert-section">{text}</div>
             </div>
         </section>
     );
