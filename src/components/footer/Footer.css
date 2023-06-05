@@ -2,6 +2,11 @@
     background-color: var(--color-quaternary);
     padding: 20px;
     text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .container {

@@ -50,4 +50,5 @@
     width: 80%;
     height: 80%;
     background-color: var(--color-quinary);
+    border-radius: 30px;
 }
