@@ -2,7 +2,7 @@
     background-color: var(--color-sixth);
     padding: 20px;
     text-align: center;
-    height: 100px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +10,6 @@
 
 .header-title {
     color: var(--color-primary);
-    font-size: 48px;
+    font-size: 36px;
     margin: 0;
 }
