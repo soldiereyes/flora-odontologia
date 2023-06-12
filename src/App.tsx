@@ -1,64 +1,36 @@
 import './App.css'
-import Navbar from "./components/navbar/Navbar.tsx";
-import SessionHeader from "./components/header-section/SessionHeader.tsx";
-import ExpertSection from "./components/expert-section/ExpertSection.tsx";
-
+//images
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import dra_imagem from './assets/dra_imagem.svg';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import smile1 from './assets/smile1.svg';
-import slide2 from './assets/slide2.svg';
-import slide3 from './assets/slide3.svg';
-import slide4 from './assets/slide4.svg';
-import slide5 from './assets/slide5.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import consultorio from './assets/consultorio.svg';
+//components
 import Contact from "./components/contact/Contact.tsx";
+import Navbar from "./components/navbar/Navbar.tsx";
+import SessionHeader from "./components/header-section/SessionHeader.tsx";
+import ExpertSection from "./components/expert-section/ExpertSection.tsx";
 import Location from "./components/location/Location.tsx";
 import Footer from "./components/footer/Footer.tsx";
 import CarouselComponent from "./components/banner-into/Carousel.tsx";
+import CarouselServices from "./components/caroussel-services/CarouselServices.tsx";
 import Scheduling from "./components/scheduling/Scheduling.tsx";
-import Cards from "./components/card-services/Cards.tsx";
 
 
 function App() {
 
-    const cards = [
-        {
-            image: slide3,
-            description: 'Obturações Dentárias',
-        },
-        {
-            image: slide5,
-            description: 'Tratamento de Canal',
-        },
-        {
-            image: slide5,
-            description: 'Coroas ',
-        },
-        {
-            image: slide4,
-            description: 'Clareamento Dental',
-        },
-        {
-            image: slide3,
-            description: 'Próteses Dentárias',
-        },
-        {
-            image: slide2,
-            description: 'Tratamento Ortodôntico',
-        },
-    ];
     return (
         <>
             <Navbar/>
             <section className="content">
                 <CarouselComponent/>
                 <SessionHeader title="NOSSOS SERVIÇOS"/>
-                {cards.map((card, index) => (
-                    <Cards key={index} image={card.image} description={card.description} />
-                ))}
-                <Scheduling callToAction="Agende sua consulta"/>
+                <CarouselServices/>
+
                 <SessionHeader title="CONHEÇA NOSSA ESPECIALISTA"/>
                 <ExpertSection
                     imageUrl={dra_imagem}
@@ -71,13 +43,16 @@ function App() {
                     Computação Aplicada à Educação pelo Instituto de Ciências Matemáticas e de Computação da Universidade
                     de São Paulo (ICMC-USP).'
                 />
-                <SessionHeader title="CONTATO"/>
+                <Scheduling
+                title="AGENDE SUA CONSULTA"
+                subtitle="Fale conosco e agende sua consulta."
+                />
                 <Contact
                     phone1="(46)33186640"
                     phone2="(46)99877-5560"
                     email="contato@floraodonto.com"
                     instagram="@flora.odontologia"
-                    imageUrl={smile1}
+                    imageUrl={consultorio}
                 />
                 <SessionHeader title="NOSSA LOCALIZAÇÃO"/>
                 <Location
