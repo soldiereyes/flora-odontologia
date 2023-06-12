@@ -16,7 +16,7 @@ interface SectionProps {
 
 const Contact: React.FC<SectionProps> = ({ phone1, phone2, email, instagram, imageUrl }) => {
     return (
-        <section className="section">
+        <section className="section-contact">
             <div className="column-contact">
                 <div className="card">
                     <div className="contact-field">
