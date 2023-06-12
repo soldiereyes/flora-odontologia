@@ -1,24 +1,26 @@
 .section-expert-section {
     display: flex;
+    height: 100%;
     width: 100%;
-    height: 50vh;
-    margin-bottom: 10vh;
+    background-image: linear-gradient(90deg, white 0%, var(--color-quinary) 100%);
+    padding: 10rem;
 }
 
 .column-1 {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content:end;
-    background-color:white ;
+
 }
 .column-2 {
     flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
+
     
 }
+
 .content-name-image {
     display: flex;
     flex-direction: column;
@@ -29,7 +31,7 @@
 .card-inner-expert-section {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
@@ -56,6 +58,7 @@
     width: 900px;
     text-indent:initial;
     text-align: justify;
+    padding: 50px;
 }
 
 .description-expert-section {
@@ -63,4 +66,5 @@
     margin-top: 10px;
     text-align: center;
     color: var(--color-primary);
+    font-weight: bold;
 }
