@@ -4,18 +4,18 @@ import React from 'react';
 import './Cards.css';
 
 interface CardProps {
-    image: string;
+    title: string;
     description: string;
+    imageUrl: string;
 }
 
-const Card: React.FC<CardProps> = ({image, description}) => {
+const Card: React.FC<CardProps> = ({ title, description, imageUrl}) => {
     return (
-        <>
-            <div className="card-service-container">
-                <img src={image} alt="Service" className="card-service-image"/>
-                <div className="card-description">{description}</div>
-            </div>
-        </>
+        <div className="slide">
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <img src={imageUrl} alt={title} />
+        </div>
     );
 };
 

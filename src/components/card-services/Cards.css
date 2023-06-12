@@ -1,28 +1,53 @@
-.card-service-container{
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    margin-top: 100px;
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card-service-image{
-    width: 100%;
-    height: 100%;
+.slide {
+    flex: 1;
+    width: 30%;
+    margin: 1rem;
+    border-radius: 100%;
+    background-color: #ffffff;
+
+}
+
+.slide h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.slide p {
+    font-size: 1rem;
+    color: var(--color-secondary);
+}
+
+.slide img {
+    width: 300px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+
+}
+.slide img:hover {
+    transform: translateY(0);
+    animation: float 4s ease-in-out infinite;
 }
 
-.card-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: #ffffff;
-    padding: 8px;
-    font-size: 24px;
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
