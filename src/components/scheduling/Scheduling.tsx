@@ -1,19 +1,23 @@
 import React from 'react';
 import './Scheduling.css';
-import {BsArrowRight} from "react-icons/bs";
+import {BsWhatsapp} from "react-icons/bs";
 
 interface SchedulingProps {
-    callToAction: string;
+    title: string;
+    subtitle: string;
 }
 
-const Scheduling: React.FC<SchedulingProps> = ({callToAction}) => {
+const Scheduling: React.FC<SchedulingProps> = ({title,subtitle  }) => {
     return (
-        <section className="schedule-container">
-            <text className="schedule-text">{callToAction}</text>
-            <div className='set-call-to-action'>
-                <BsArrowRight/>
-            </div>
-        </section>
+        <div className="call-to-action">
+            <h2 className="title-call-to-action">{title}</h2>
+            <p className="subtitle-call-to-action">{subtitle}</p>
+            <a href="https://api.whatsapp.com/" className="button-call-to-action">
+                <i className="fab fa-whatsapp">
+                    <BsWhatsapp/>
+                </i> Agende pelo WhatsApp
+            </a>
+        </div>
 
     )
 }

@@ -1,33 +1,43 @@
-.schedule-container {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    height: 100px;
+.call-to-action {
+    background-color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: right;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.schedule-text {
-    flex: 3;
-    display: flex;
-    justify-content: right;
-    color: var(--color-primary);
-    font-size: 36px;
-    margin: 0;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.set-call-to-action {
-    flex: 1;
-    display: flex;
     justify-content: center;
-    color: var(--color-primary);
-    font-size: 48px;
-    margin: 0;
-    cursor: pointer;
+    height: 200px;
+    margin:6rem 0 6rem 0;
 }
 
+.title-call-to-action {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.subtitle-call-to-action {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    font-weight: lighter;
+
+}
+
+.button-call-to-action {
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 2px solid var(--color-secondary);
+}
+
+.button i {
+    margin-right: 5px;
+    background-color: white;
+}
+button-call-to-action:hover {
+    background-color: white;
+    color: var(--color-secondary);
+    text-decoration: none;
+ }
