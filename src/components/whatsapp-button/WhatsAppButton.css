@@ -3,27 +3,32 @@
     bottom: 20px;
     right: 20px;
     z-index: 9999;
-    margin-right: 10px;
-    font-size: 30px;
-    color: var(--color-primary);
-    cursor: pointer;
-}
-
-.a {
-    display: block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #25D366;
-    text-align: center;
-    line-height: 60px;
-    transition: background-color 0.3s;
 }
 
 .icon-fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(37, 211, 102);
+    border-radius: 50%;
+}
+
+.icon-fixed a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.icon-fixed a:hover {
+    background-color: rgb(37, 161, 77);
+    border-radius: 50%;
 
 }
 
-.whatsapp-button a:hover {
-    background-color: #128C7E;
-}
