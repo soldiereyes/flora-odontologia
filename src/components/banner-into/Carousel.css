@@ -15,8 +15,8 @@
 
 .carousel-caption {
     position: absolute;
-    top: 40vh;
-    left: 35vh;
+    top: 50vh;
+    left: 25vh;
     text-align: initial;
     color: white;
     width: 1200px;
@@ -26,10 +26,26 @@
     font-size: 64px;
     font-weight: bold;
     padding: 10px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    font-variant: small-caps;
 }
 
 .carousel-caption h2 {
     font-size: 36px;
-    font-weight: normal;
     padding: 10px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    font-family: 'Helvetica Neue',  sans-serif;
+    font-weight: lighter;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
