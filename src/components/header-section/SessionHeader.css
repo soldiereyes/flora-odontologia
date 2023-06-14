@@ -10,6 +10,9 @@
 
 .header-title {
     color: var(--color-primary);
-    font-size: 36px;
+    font-size: 48px;
     margin: 0;
+    font-family: 'Helvetica Neue',  sans-serif;
+    font-weight: lighter;
+
 }
