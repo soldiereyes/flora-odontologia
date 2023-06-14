@@ -5,9 +5,6 @@ import './App.css'
 import dra_imagem from './assets/dra_imagem.svg';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import smile1 from './assets/smile1.svg';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import consultorio from './assets/consultorio.svg';
 //components
 import Contact from "./components/contact/Contact.tsx";
@@ -19,6 +16,7 @@ import Footer from "./components/footer/Footer.tsx";
 import CarouselComponent from "./components/banner-into/Carousel.tsx";
 import CarouselServices from "./components/caroussel-services/CarouselServices.tsx";
 import Scheduling from "./components/scheduling/Scheduling.tsx";
+import WhatsAppButton from "./components/whatsapp-button/WhatsAppButton.tsx";
 
 
 function App() {
@@ -31,10 +29,11 @@ function App() {
                 <SessionHeader title="NOSSOS SERVIÇOS"/>
                 <CarouselServices/>
 
-                <SessionHeader title="CONHEÇA NOSSA ESPECIALISTA"/>
+                <SessionHeader title="NOSSA ESPECIALISTA"/>
                 <ExpertSection
                     imageUrl={dra_imagem}
                     description='Dra. Tamires Oliveira'
+                    cro='CRO-SC 19.711'
                     text='Cirurgiã-dentista (2014), mestre (2016) e doutora (2020) em Biofotônica Aplicada às Ciências
                     da Saúde pela Universidade Nove de Julho (UNINOVE). Têm experiência na área de Fototerapia com
                     ênfase em Terapia Antimicrobiana e atua principalmente nos seguintes temas: terapia fotodinâmica
@@ -62,8 +61,8 @@ function App() {
 
                 />
                 <Footer/>
+                <WhatsAppButton/>
             </section>
-
         </>
     )
 }
