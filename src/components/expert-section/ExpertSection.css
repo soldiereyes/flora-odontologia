@@ -12,6 +12,7 @@
     align-items: center;
 
 }
+
 .column-2 {
     flex: 2;
     display: flex;
