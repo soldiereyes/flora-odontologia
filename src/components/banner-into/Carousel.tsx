@@ -12,8 +12,7 @@ function CarouselComponent() {
                 <div className='carousel-caption'>
                     <h1>Um sorriso perfeito começa aqui!</h1>
                     <h2>Conheça nossos serviços odontológicos de excelência,
-                        equipe especializada e tecnologia de ponta. Cuidamos do seu sorriso com carinho e dedicação.
-                        Agende sua consulta e descubra como podemos transformar sua experiência odontológica!</h2>
+                        equipe especializada e tecnologia de ponta.</h2>
                 </div>
             </div>
         </div>
