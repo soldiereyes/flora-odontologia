@@ -13,7 +13,7 @@ import SessionHeader from "./components/header-section/SessionHeader.tsx";
 import ExpertSection from "./components/expert-section/ExpertSection.tsx";
 import Location from "./components/location/Location.tsx";
 import Footer from "./components/footer/Footer.tsx";
-import CarouselComponent from "./components/banner-into/Carousel.tsx";
+import BannerInto from "./components/banner-into/BannerInto.tsx";
 import CarouselServices from "./components/caroussel-services/CarouselServices.tsx";
 import Scheduling from "./components/scheduling/Scheduling.tsx";
 import WhatsAppButton from "./components/whatsapp-button/WhatsAppButton.tsx";
@@ -25,7 +25,7 @@ function App() {
         <>
             <Navbar/>
             <section className="content">
-                <CarouselComponent/>
+                <BannerInto/>
                 <SessionHeader title="NOSSOS SERVIÇOS"/>
                 <CarouselServices/>
 
