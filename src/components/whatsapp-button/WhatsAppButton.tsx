@@ -8,7 +8,6 @@ function WhatsAppButton() {
                 <a href="https://api.whatsapp.com/send?phone=SEUNUMERODOTELEFONE" target="_blank"
                    rel="noopener noreferrer">
                     <IoLogoWhatsapp/>
-
                 </a>
             </div>
         </div>
