@@ -7,7 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-yarn.lock
+
 node_modules
 dist
 dist-ssr
@@ -23,3 +23,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.yarn.lock
+.eslintrc.cjs
+.eslintignore
+.eslintcache
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+.komodo*
