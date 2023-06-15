@@ -51,3 +51,24 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 767px) {
+    .slide {
+        width: 60%;
+    }
+
+    .slide h3 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .slide p {
+        display: none;
+    }
+
+    .slide img {
+        width: 150px;
+        height: 150px;
+        margin-top: 1rem;
+    }
+}

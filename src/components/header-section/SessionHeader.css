@@ -14,5 +14,10 @@
     margin: 0;
     font-family: 'Helvetica Neue',  sans-serif;
     font-weight: lighter;
+}
 
+@media screen and (max-width: 768px){
+    .header-title {
+        font-size: 24px;
+    }
 }

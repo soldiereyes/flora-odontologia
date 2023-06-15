@@ -4,6 +4,7 @@
     width: 100%;
     background-image: linear-gradient(90deg, white 0%, var(--color-quinary) 100%);
     padding: 10rem;
+    margin-top: 4rem;
 }
 
 .column-1 {
@@ -83,4 +84,43 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+@media (max-width: 767px) {
+    .section-expert-section {
+        padding: 2rem;
+        display: block;
+
+    }
+
+    .column-1,
+    .column-2 {
+        margin-bottom: 1rem;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text-expert-section {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .description-expert-section {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .description-expert-section-cro {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+
 

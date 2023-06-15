@@ -36,8 +36,29 @@
     margin-right: 5px;
     background-color: white;
 }
+
 button-call-to-action:hover {
     background-color: white;
     color: var(--color-secondary);
     text-decoration: none;
- }
+}
+
+@media only screen and (max-width: 600px) {
+    .call-to-action {
+        height: 150px;
+        margin: 4rem 0;
+    }
+
+    .title-call-to-action {
+        font-size: 20px;
+    }
+
+    .subtitle-call-to-action {
+        font-size: 14px;
+    }
+
+    .button-call-to-action {
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+}

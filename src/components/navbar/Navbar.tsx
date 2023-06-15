@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
                 <div className="navbar-logo">
                     <img src={logo} alt="Logo"/>
                 </div>
-                <ul className="navbar-menu">
+                <div className="navbar-menu">
                     <li className="navbar-item">Serviços</li>
                     <li className="navbar-item">Contato</li>
                     <li className="navbar-item">Localização</li>
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
                     <button className="menu-button" onClick={handleMenuClick}>
                        <BiMenu/>
                     </button>
-                </ul>
+                </div>
             </div>
         </nav>
     );

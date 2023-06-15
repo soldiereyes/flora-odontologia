@@ -45,22 +45,35 @@
 @media screen and (max-width: 768px) {
     .navbar-container {
         flex-direction: row;
-        padding: 0 70px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
     }
 
     .navbar-item {
         margin: 10px 0;
         display: none;
+
     }
 
     .menu-button {
-        display: block;
+        display: flex;
         font-size: 30px;
         cursor: pointer;
         color: var(--color-primary);
         background-color: white;
         border: none;
         transition: all 0.3s ease;
+        margin-left: 200px;
+
+    }
+    .navbar-menu {
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
 
