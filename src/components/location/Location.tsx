@@ -6,10 +6,11 @@ import logo from '../../assets/logo.svg';
 interface SectionProps {
     address: string;
     openingHours: string;
+    openingHoursHoliday: string;
     technicalResponsible: string;
 }
 
-const Location: React.FC<SectionProps> = ({ address, openingHours, technicalResponsible }) => {
+const Location: React.FC<SectionProps> = ({ address, openingHours,openingHoursHoliday, technicalResponsible }) => {
     // Função para carregar o mapa do Google Maps
     const loadMap = () => {
         const map = new window.google.maps.Map(document.getElementById('map'), {
@@ -28,7 +29,7 @@ const Location: React.FC<SectionProps> = ({ address, openingHours, technicalResp
     React.useEffect(() => {
         // Carregar o mapa após o componente ser montado
         const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=loadMap`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDlomHE8pV2Yq-OZ09__5todbHYDH67EQc`;
         script.async = true;
         script.defer = true;
         document.head.appendChild(script);
@@ -50,6 +51,7 @@ const Location: React.FC<SectionProps> = ({ address, openingHours, technicalResp
                     <div className="info-field">
                         <div className="label">Horário de Funcionamento:</div>
                         <div className="value">{openingHours}</div>
+                        <div className="value">{openingHoursHoliday}</div>
                     </div>
                     <div className="info-field">
                         <div className="label">Responsável Técnico:</div>

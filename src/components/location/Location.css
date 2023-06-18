@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2em;
 }
 
 .card-location {
@@ -23,7 +24,7 @@
 .info-field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 2em;
 }
 
 .label {
@@ -53,7 +54,7 @@
     border-radius: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
     .section {
         flex-direction: column;
         height: auto;
