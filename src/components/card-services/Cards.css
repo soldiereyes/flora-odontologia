@@ -25,8 +25,8 @@
 }
 
 .slide img {
-    width: 300px;
-    height: 300px;
+    width: 15em;
+    height: 15em;
     object-fit: cover;
     border-radius: 50%;
     margin-top: 1.5rem;
@@ -52,9 +52,9 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .slide {
-        width: 60%;
+        width: 40%;
     }
 
     .slide h3 {
