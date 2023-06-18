@@ -43,8 +43,8 @@ function App() {
                     de São Paulo (ICMC-USP).'
                 />
                 <Scheduling
-                title="AGENDE SUA CONSULTA"
-                subtitle="Fale conosco e agende sua consulta."
+                    title="AGENDE SUA CONSULTA"
+                    subtitle="Fale conosco e agende sua consulta."
                 />
                 <Contact
                     phone1="(46)33186640"
@@ -56,7 +56,8 @@ function App() {
                 <SessionHeader title="NOSSA LOCALIZAÇÃO"/>
                 <Location
                     address="Av. Mal Floriano Peixoto, 233 - Curitiba-Paraná"
-                    openingHours="Segunda a Sexta das 9:00 às 17:00 Sábado das 9:00 às 13:00"
+                    openingHours="Segunda a Sexta das 9:00 às 17:00 horas"
+                    openingHoursHoliday="Sábado das 9:00 às 12:00 horas"
                     technicalResponsible="Dra Tamires de Oliveira Silva CROSC 19.711"
 
                 />
