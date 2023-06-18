@@ -5,7 +5,7 @@
     cursor: grab;
     overflow: hidden;
     margin-bottom: 8rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 .cards-services-container{
@@ -19,7 +19,7 @@
     max-width: 90%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .carousel-services-container {
         margin-bottom: 0;
         margin-top: 0;
