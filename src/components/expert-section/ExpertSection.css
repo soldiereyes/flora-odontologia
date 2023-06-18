@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     background-image: linear-gradient(90deg, white 0%, var(--color-quinary) 100%);
-    padding: 10rem;
+    padding: 7rem;
     margin-top: 4rem;
 }
 
@@ -36,14 +36,14 @@
 .card-inner-expert-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     height: 100%;
     width: 100%;
 }
 
 .circle {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #f2f2f2;
     display: flex;
@@ -52,13 +52,13 @@
 }
 
 .image {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
 
 .text-expert-section {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--color-primary);
     width: 900px;
     text-indent:initial;
@@ -85,9 +85,10 @@
     margin-right: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .section-expert-section {
         padding: 2rem;
+        margin-top: 1em;
         display: block;
 
     }
@@ -121,6 +122,14 @@
         font-size: 12px;
         margin-top: 5px;
     }
+    .card-inner-expert-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 
