@@ -16,7 +16,7 @@
     font-weight: lighter;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
     .header-title {
         font-size: 24px;
     }

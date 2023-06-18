@@ -9,13 +9,13 @@
 }
 
 .title-call-to-action {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     color: var(--color-primary);
 }
 
 .subtitle-call-to-action {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
     color: var(--color-primary);
     font-weight: lighter;
