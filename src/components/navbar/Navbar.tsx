@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import {BiMenu} from 'react-icons/bi';
 import {BsWhatsapp} from 'react-icons/bs';
+import {Link} from 'react-scroll';
+
 import './Navbar.css';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import logo from '../../assets/logo.svg';
-
 
 
 const Navbar: React.FC = () => {
@@ -22,15 +23,69 @@ const Navbar: React.FC = () => {
                     <img src={logo} alt="Logo"/>
                 </div>
                 <div className="navbar-menu">
-                    <li className="navbar-item">Serviços</li>
-                    <li className="navbar-item">Contato</li>
-                    <li className="navbar-item">Localização</li>
                     <li className="navbar-item">
+                        <Link
+                            activeClass="active"
+                            to="section1"
+                            spy={true}
+                            smooth={true}
+                            offset={-180}
+                            duration={700}
+                        >
+                            Serviços
+                        </Link>
+                    </li>
+                    <li className="navbar-item">
+                        <Link
+                            activeClass="active"
+                            to="section2"
+                            spy={true}
+                            smooth={true}
+                            offset={-180}
+                            duration={700}
+                        >
+                            Especialista
+                        </Link>
+                    </li>
+                    <li className="navbar-item">
+                        <Link
+                            activeClass="active"
+                            to="section3"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={900}
+                        >
+                            Contato
+                        </Link>
+                    </li>
+                    <li className="navbar-item">
+                        <Link
+                            activeClass="active"
+                            to="section4"
+                            spy={true}
+                            smooth={true}
+                            offset={-180}
+                            duration={900}
+                        >
+                            Localização
+                        </Link>
+                    </li>
+                    <li className="navbar-item">
+                        <Link
+                            activeClass="active"
+                            to="section4"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
                         Fale Comigo
+                        </Link>
                         <BsWhatsapp/>
                     </li>
                     <button className="menu-button" onClick={handleMenuClick}>
-                       <BiMenu/>
+                        <BiMenu/>
                     </button>
                 </div>
             </div>

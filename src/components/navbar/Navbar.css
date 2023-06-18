@@ -33,6 +33,13 @@
     color: var(--color-primary);
 }
 
+.navbar-item:hover {
+    color: var(--color-secondary);
+    font-weight: lighter;
+    transform: translateY(0);
+    animation: bounce 0.5s ease-in-out;
+}
+
 .menu-button {
     display: none;
 }
@@ -40,6 +47,19 @@
 .whatsapp-icon {
     padding: 5px;
     color: var(--color-primary);
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 768px) {
