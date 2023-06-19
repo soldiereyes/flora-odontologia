@@ -7,7 +7,7 @@ import './Navbar.css';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo_sem_fundo.svg';
 
 
 const Navbar: React.FC = () => {
