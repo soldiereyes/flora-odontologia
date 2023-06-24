@@ -80,9 +80,16 @@ const Navbar: React.FC = () => {
                             offset={-70}
                             duration={500}
                         >
-                        Fale Comigo
+                            Fale Comigo
                         </Link>
-                        <BsWhatsapp/>
+
+                    </li>
+                    <li className="navbar-item-container-icon">
+                        <div className="navbar-item-icon">
+                            <a className="bs-button" href="https://wa.me/5546998775560">
+                                <BsWhatsapp/>
+                            </a>
+                        </div>
                     </li>
                     <button className="menu-button" onClick={handleMenuClick}>
                         <BiMenu/>
