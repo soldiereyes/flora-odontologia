@@ -24,11 +24,10 @@
 
 .carousel-caption h1 {
     font-size: 64px;
-    font-weight: bold;
     padding: 10px;
     animation-name: fadeIn;
     animation-duration: 3s;
-    font-variant: small-caps;
+    font-family: 'Ysabeau SC',  sans-serif;
 }
 
 .carousel-caption h2 {
@@ -36,7 +35,7 @@
     padding: 10px;
     animation-name: fadeIn;
     animation-duration: 3s;
-    font-family: 'Helvetica Neue',  sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
     font-weight: lighter;
 
 }

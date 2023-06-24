@@ -10,13 +10,13 @@
 
 .header-title {
     color: var(--color-primary);
-    font-size: 48px;
+    font-size: 36px;
     margin: 0;
-    font-family: 'Helvetica Neue',  sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
     font-weight: lighter;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 576px){
     .header-title {
         font-size: 24px;
     }

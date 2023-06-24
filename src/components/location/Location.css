@@ -31,12 +31,16 @@
     font-weight: bold;
     font-size: 24px;
     color: var(--color-primary);
+    font-family: 'Ysabeau SC', sans-serif;
+
 }
 
 .value {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--color-primary);
+    font-family: 'Ysabeau SC', sans-serif;
+
 }
 
 .map-container {
@@ -54,7 +58,7 @@
     border-radius: 30px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 576px) {
     .section {
         flex-direction: column;
         height: auto;
@@ -63,6 +67,7 @@
 
     .column {
         flex: none;
+        padding: 0;
     }
 
     .card-location {
@@ -84,11 +89,11 @@
     }
 
     .label {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .value {
-        font-size: 16px;
+        font-size: 12px;
     }
 
 }

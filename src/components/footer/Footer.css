@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--color-quaternary);
+    background-color: var(--color-secondary);
     padding: 20px;
     text-align: center;
     height: 100px;
@@ -12,4 +12,23 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.container p {
+    color: var(--color-sixth);
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: lighter;
+}
+
+@media (max-width: 576px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+
+    }
+    .container p{
+      font-size: 10px;
+    }
 }

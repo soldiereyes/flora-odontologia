@@ -9,7 +9,7 @@ function BannerInto() {
             <div className='carousel-image'>
                 <img src={slide1} alt='Slide1' />
                 <div className='carousel-caption'>
-                    <h1>Um sorriso perfeito começa aqui!</h1>
+                    <h1>Seu sorriso perfeito começa aqui!</h1>
                     <h2>Conheça nossos serviços odontológicos de excelência,
                         equipe especializada e tecnologia de ponta.</h2>
                 </div>

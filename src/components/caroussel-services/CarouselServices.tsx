@@ -19,37 +19,37 @@ const CarouselServices = () => {
     const [width, setWidth] = useState(0);
     const services = [
         {
-            title: 'Obturações dentárias',
+            title: 'Obturações Dentárias',
             description: ' Este tratamento é usado para reparar uma cavidade em um dente. A parte deteriorada do dente ' +
-                'é removida e então preenchida com um material como amálgama, resina composta ou porcelana.',
+                'é removida e então preenchida com um material como resina composta.',
             imageUrl: slide3,
         },
         {
-            title: 'Tratamento de canal',
+            title: 'Tratamento de Canal',
             description: 'Este tratamento é usado para remover tecido infectado ou danificado de dentro do dente.' +
                 'Geralmente é realizado quando uma cavidade não tratada se espalha para a polpa do dente.',
             imageUrl: slide2,
         },
         {
-            title: 'Coroas dentárias',
+            title: 'Coroas Dentárias',
             description: 'Uma coroa é uma capa que é colocada sobre um dente danificado para restaurar sua forma, ' +
-                'tamanho e força. As coroas são comumente usadas para dentes rachados, quebrados ou com cárie grave',
+                'tamanho e força. As coroas são comumente usadas para dentes quebrados',
             imageUrl: slide3,
         },
         {
-            title: 'Clareamento dental',
+            title: 'Clareamento Dental',
             description: 'Este tratamento é usado para remover manchas e descoloração dos dentes. Pode ser feito no ' +
                 'consultório ou em casa com o uso de produtos clareadores.',
             imageUrl: slide4,
         },
         {
-            title: 'Implantes dentários',
+            title: 'Implantes Dentários',
             description: 'Os implantes são usados para substituir dentes perdidos. Um pino de titânio é cirurgicamente ' +
                 'inserido no osso da mandíbula e um dente protético é fixado ao pino.',
             imageUrl: slide4,
         },
         {
-            title: 'Tratamento ortodôntico',
+            title: 'Tratamento Ortodôntico',
             description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
                 ' alinhar os dentes e corrigir problemas de mordida.',
             imageUrl: slide2,

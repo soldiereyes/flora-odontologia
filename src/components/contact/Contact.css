@@ -46,6 +46,7 @@
     color: var(--color-primary);
     align-items: initial;
     cursor: pointer;
+    font-family: 'Ysabeau SC', sans-serif;
 }
 
 .contact-info:hover {
@@ -75,7 +76,7 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 576px) {
     .section-contact {
         flex-direction: column;
         margin-bottom: 0;
@@ -105,7 +106,7 @@
     }
 
     .contact-info {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: lighter;
     }
 }

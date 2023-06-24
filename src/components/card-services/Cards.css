@@ -14,14 +14,18 @@
 }
 
 .slide h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 24px;
+    margin-bottom: 10px;
     color: var(--color-primary);
+    font-family: 'Ysabeau SC', sans-serif;
+    text-decoration: underline;
 }
 
 .slide p {
-    font-size: 1rem;
+    font-size: 18px;
     color: var(--color-secondary);
+    font-family: 'Ysabeau SC', sans-serif;
+
 }
 
 .slide img {
@@ -52,7 +56,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 576px) {
     .slide {
         width: 40%;
     }

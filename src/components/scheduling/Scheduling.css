@@ -12,24 +12,28 @@
     font-size: 24px;
     font-weight: bold;
     color: var(--color-primary);
+    font-family: 'Ysabeau SC 400', sans-serif;
+
 }
 
 .subtitle-call-to-action {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: var(--color-primary);
     font-weight: lighter;
-
+    font-family: 'Ysabeau SC', sans-serif;
 }
 
 .button-call-to-action {
     display: inline-block;
     padding: 20px 50px;
-    background-color: var(--color-primary);
-    color: #fff;
+    background-color: rgb(37, 211, 102);
+    color: var(--color-sixth) ;
     text-decoration: none;
     border-radius: 40px;
-    border: 2px solid var(--color-secondary);
+    font-family: 'Ysabeau SC 400', sans-serif;
+    font-size: 18px;
+
 }
 
 .button i {
@@ -43,7 +47,7 @@ button-call-to-action:hover {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     .call-to-action {
         height: 150px;
         margin: 4rem 0;
