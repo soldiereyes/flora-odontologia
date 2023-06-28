@@ -46,7 +46,8 @@
     color: var(--color-primary);
     align-items: initial;
     cursor: pointer;
-    font-family: 'Ysabeau SC', sans-serif;
+    font-family: 'Ysabeau SC 400', sans-serif;
+    text-decoration: none;
 }
 
 .contact-info:hover {
@@ -81,12 +82,12 @@
         flex-direction: column;
         margin-bottom: 0;
         max-height: none;
-        background-image: linear-gradient(90deg, white 0%, var(--color-quinary) 100%)
     }
 
     .column-contact {
-        flex: none;
+        flex: content;
         background-image: none;
+        justify-content: center;
     }
 
     .column-image {
@@ -94,7 +95,8 @@
     }
 
     .card {
-        align-items: flex-start;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .contact-field {
