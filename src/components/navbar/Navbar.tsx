@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
                             to="section3"
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={180}
                             duration={900}
                         >
                             Contato
@@ -80,9 +80,10 @@ const Navbar: React.FC = () => {
                             offset={-70}
                             duration={500}
                         >
-                            Fale Comigo
                         </Link>
-
+                        <a href="https://wa.me/5546998775560" className='talk-to-me'>
+                            Fale Comigo
+                        </a>
                     </li>
                     <li className="navbar-item-container-icon">
                         <div className="navbar-item-icon">
