@@ -1,22 +1,23 @@
 .carousel-services-container{
     max-width: 100%;
-    display: flex;
     padding: 0;
     cursor: grab;
     overflow: hidden;
     margin-bottom: 8rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .cards-services-container{
     max-width: 100%;
-    display: block ruby;
+    display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 50px 0;
 }
 
 .carousel-services-inner{
-    max-width: 90%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 576px) {
@@ -26,7 +27,7 @@
     }
 
     .cards-services-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
