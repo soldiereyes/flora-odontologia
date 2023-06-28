@@ -50,6 +50,7 @@ function App() {
                         title="AGENDE SUA CONSULTA"
                         subtitle="Fale conosco e agende sua consulta."
                     />
+                    <SessionHeader title="CONTATO"/>
                     <Contact
                         phone1="(46)33186640"
                         phone2="(46)99877-5560"
