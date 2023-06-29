@@ -54,6 +54,36 @@ const CarouselServices = () => {
                 ' alinhar os dentes e corrigir problemas de mordida.',
             imageUrl: slide2,
         },
+        {
+            title: 'Tratamento Ortodôntico',
+            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
+                ' alinhar os dentes e corrigir problemas de mordida.',
+            imageUrl: slide2,
+        },
+        {
+            title: 'Tratamento Ortodôntico',
+            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
+                ' alinhar os dentes e corrigir problemas de mordida.',
+            imageUrl: slide2,
+        },
+        {
+            title: 'Tratamento Ortodôntico',
+            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
+                ' alinhar os dentes e corrigir problemas de mordida.',
+            imageUrl: slide2,
+        },
+        {
+            title: 'Tratamento Ortodôntico',
+            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
+                ' alinhar os dentes e corrigir problemas de mordida.',
+            imageUrl: slide2,
+        },
+        {
+            title: 'Tratamento Ortodôntico',
+            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
+                ' alinhar os dentes e corrigir problemas de mordida.',
+            imageUrl: slide2,
+        },
     ];
 
     useEffect(() => {

@@ -9,7 +9,7 @@
 
 .cards-services-container{
     max-width: 100%;
-    display: flex;
+    display: -webkit-box;
     justify-content: center;
     padding: 50px 0;
 }
