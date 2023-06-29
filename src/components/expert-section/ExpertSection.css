@@ -70,10 +70,9 @@
 }
 
 .text-expert-section:hover {
-    box-shadow: 7px 6px 31px -5px rgba(157, 157, 157, 0.68);
     transition: ease-in-out 0.9s;
     transform: scale(1.2);
-
+    background-color: var(--color-seventh);
 }
 
 .description-expert-section {
