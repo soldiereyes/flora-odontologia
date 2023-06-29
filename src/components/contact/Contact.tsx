@@ -29,7 +29,7 @@ const Contact: React.FC<SectionProps> = ({phone1, phone2, email, instagram, imag
                         <div className="icon">
                             <FiSmartphone/>
                         </div>
-                        <a href="https://wa.me/5546998775560">
+                        <a href="https://wa.me/5546998775560" className='phone-ref'>
                             <div className="contact-info">{phone2}</div>
                         </a>
                     </div>
@@ -43,7 +43,7 @@ const Contact: React.FC<SectionProps> = ({phone1, phone2, email, instagram, imag
                         <div className="icon">
                             <BsInstagram/>
                         </div>
-                        <a href="https://www.instagram.com/flora.odontologia/">
+                        <a href="https://www.instagram.com/flora.odontologia/" className='instagram-ref'>
                             <div className="contact-info">{instagram}</div>
                         </a>
                     </div>
