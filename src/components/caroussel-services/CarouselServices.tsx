@@ -1,4 +1,4 @@
-import {useState, useEffect , useRef} from "react";
+import {useState, useEffect } from "react";
 import "./CarouselServices.css";
 import {motion} from "framer-motion";
 //images
@@ -15,8 +15,8 @@ import slide4 from "../../assets/slide4.svg";
 import Card from "../card-services/Cards.tsx";
 const CarouselServices = () => {
 
-    const carousel = useRef();
     const [width, setWidth] = useState(0);
+
     const services = [
         {
             title: 'Obturações Dentárias',
@@ -55,48 +55,43 @@ const CarouselServices = () => {
             imageUrl: slide2,
         },
         {
-            title: 'Tratamento Ortodôntico',
-            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
-                ' alinhar os dentes e corrigir problemas de mordida.',
+            title: 'Tratamento de Doenças Gengivais',
+            description: 'Este tratamento é usado para tratar e prevenir doenças gengivais. Pode envolver limpeza profunda,' +
+                ' raspagem e alisamento radicular, antibióticos ou cirurgia.',
             imageUrl: slide2,
         },
         {
-            title: 'Tratamento Ortodôntico',
-            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
-                ' alinhar os dentes e corrigir problemas de mordida.',
+            title: 'Dentaduras',
+            description: 'Dentaduras são aparelhos removíveis usados para substituir dentes ausentes. Podem ser dentaduras parciais ou completas.',
             imageUrl: slide2,
         },
         {
-            title: 'Tratamento Ortodôntico',
-            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
-                ' alinhar os dentes e corrigir problemas de mordida.',
+            title: 'Cirurgia oral',
+            description: 'A cirurgia oral pode ser necessária para remover os dentes do siso, reparar uma lesão na mandíbula ou tratar um tumor ou cisto.',
             imageUrl: slide2,
         },
         {
-            title: 'Tratamento Ortodôntico',
-            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
-                ' alinhar os dentes e corrigir problemas de mordida.',
-            imageUrl: slide2,
-        },
-        {
-            title: 'Tratamento Ortodôntico',
-            description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
-                ' alinhar os dentes e corrigir problemas de mordida.',
+            title: 'Ponte dentária',
+            description: 'as pontes são usadas para substituir um ou mais dentes ausentes. Elas são ancoradas aos dentes' +
+                ' adjacentes e geralmente são feitas de porcelana ou cerâmica.',
             imageUrl: slide2,
         },
     ];
 
     useEffect(() => {
-        if (carousel.current) {
-            console.log(
-                (carousel.current as HTMLDivElement).scrollWidth,
-                (carousel.current as HTMLDivElement).offsetWidth
-            );
-            setWidth(
-                (carousel.current as HTMLDivElement).scrollWidth -
-                (carousel.current as HTMLDivElement).offsetWidth
-            );
-        }
+        const handleResize = (): void => {
+            const carouselInner = document.querySelector('.carousel-services-inner') as HTMLElement;
+            console.log("carrousel inner",carouselInner);
+            if (carouselInner) {
+                setWidth(carouselInner.offsetWidth);
+            }
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     return (
@@ -104,7 +99,8 @@ const CarouselServices = () => {
                         whileTap={{cursor: 'grabbing'}}>
                 <motion.div className="carousel-services-inner"
                             drag="x"
-                            dragConstraints={{left: -1400, right: 0}}
+                            dragConstraints={{left: -width, right: 0}}
+                            dragElastic={0.1}
                 >
                     <div className="cards-services-container">
                         {services.map((service, index) => (

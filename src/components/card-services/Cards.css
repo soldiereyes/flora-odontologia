@@ -5,23 +5,23 @@
 }
 
 .slide {
-    width: 30%;
+    width: 20%;
+    height: 30rem;
     background-color: #ffffff;
     transition: ease-in-out 0.9s;
-    padding: 20px 0;
+    padding: 40px;
     border-radius: 10px;
-    margin-left: 60px;
+    margin: 30px;
 }
 
 .slide:hover {
-    box-shadow: 1px 1px 30px -15px var(--color-secondary);
     transition: ease-in-out 0.9s;
     transform: scale(1.2);
-    background-color: var(--color-sixth);
+    background-color: var(--color-seventh);
 }
 
 .slide h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 5px;
     color: var(--color-primary);
     font-family: 'Ysabeau SC', sans-serif;
