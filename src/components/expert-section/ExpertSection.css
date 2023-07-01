@@ -2,7 +2,6 @@
     display: flex;
     height: 100%;
     width: 100%;
-    /*background-image: linear-gradient(90deg, white 0%, var(--color-quinary) 100%);*/
     padding: 7rem;
     margin-top: 2rem;
 }
@@ -71,9 +70,9 @@
 
 .text-expert-section:hover {
     transition: ease-in-out 0.9s;
-    transform: scale(1.2);
-    background-color: var(--color-seventh);
-}
+    transform: scale(1.1);
+    background-color: var(--color-sixth);
+    border: 1px solid var(--color-primary);}
 
 .description-expert-section {
     font-size: 24px;
