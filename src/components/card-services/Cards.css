@@ -16,8 +16,9 @@
 
 .slide:hover {
     transition: ease-in-out 0.9s;
-    transform: scale(1.2);
-    background-color: var(--color-seventh);
+    transform: scale(1.05);
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-sixth);
 }
 
 .slide h3 {
