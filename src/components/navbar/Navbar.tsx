@@ -53,10 +53,10 @@ const Navbar: React.FC = () => {
                             to="section3"
                             spy={true}
                             smooth={true}
-                            offset={180}
+                            offset={-250}
                             duration={900}
                         >
-                            Contato
+                            Estrutura
                         </Link>
                     </li>
                     <li className="navbar-item">
