@@ -41,8 +41,8 @@
 }
 
 .circle {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,8 +51,8 @@
 }
 
 .image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -72,7 +72,8 @@
     transition: ease-in-out 0.9s;
     transform: scale(1.1);
     background-color: var(--color-sixth);
-    border: 1px solid var(--color-primary);}
+    border: 1px solid var(--color-primary);
+}
 
 .description-expert-section {
     font-size: 24px;

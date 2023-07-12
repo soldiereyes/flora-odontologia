@@ -5,6 +5,7 @@ import './ExpertSection.css';
 interface SectionProps {
     imageUrl: string;
     text: string;
+    text_additional?: string;
     description: string;
     cro?: string;
 }
