@@ -1,6 +1,16 @@
 import React from 'react';
 import './Location.css';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import logo from '../../assets/logo.svg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import map from '../../assets/map.svg';
+
+import {BsTelephone} from "react-icons/bs";
+import {FiSmartphone} from "react-icons/fi";
+import {FiMail} from "react-icons/fi";
+import {BsInstagram} from "react-icons/bs";
 
 
 interface SectionProps {
@@ -8,38 +18,23 @@ interface SectionProps {
     openingHours: string;
     openingHoursHoliday: string;
     technicalResponsible: string;
+    contactInfoCellphone: string;
+    contactInfoInstagram: string;
+    contactInfoEmail: string;
+    contactInfoPhone: string;
 }
 
-const Location: React.FC<SectionProps> = ({ address, openingHours,openingHoursHoliday, technicalResponsible }) => {
-    // Função para carregar o mapa do Google Maps
-    const loadMap = () => {
-        const map = new window.google.maps.Map(document.getElementById('map'), {
-            center: { lat: -23.5505, lng: -46.6333 }, // Coordenadas do centro do mapa
-            zoom: 15, // Zoom do mapa
-        });
+const Location: React.FC<SectionProps> = ({
+                                              address,
+                                              openingHours,
+                                              openingHoursHoliday,
+                                              technicalResponsible,
+                                              contactInfoCellphone,
+                                              contactInfoInstagram,
+                                              contactInfoEmail,
+                                              contactInfoPhone,
 
-        // Marcador para indicar a localização do consultório
-        const marker = new window.google.maps.Marker({
-            position: { lat: -23.5505, lng: -46.6333 }, // Coordenadas do marcador
-            map: map,
-            title: 'Consultório',
-        });
-    };
-
-    React.useEffect(() => {
-        // Carregar o mapa após o componente ser montado
-        const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDlomHE8pV2Yq-OZ09__5todbHYDH67EQc`;
-        script.async = true;
-        script.defer = true;
-        document.head.appendChild(script);
-
-        // Remover o script do mapa ao desmontar o componente
-        return () => {
-            document.head.removeChild(script);
-        };
-    }, []);
-
+                                          }) => {
     return (
         <section className="section">
             <div className="column">
@@ -58,17 +53,61 @@ const Location: React.FC<SectionProps> = ({ address, openingHours,openingHoursHo
                         <div className="value">{technicalResponsible}</div>
                     </div>
                     <div className="info-field">
+                        <div className="label">Contato:</div>
+                        <div className="info-field-inner">
+                            <div className="contact-field">
+                                <div className="value-contact">
+                                    <div className="icon">
+                                        <BsTelephone/>
+                                    </div>
+                                    {contactInfoPhone}
+                                </div>
+                            </div>
+
+                            <div className="contact-field">
+                                <div className="value-contact">
+                                    <div className="icon">
+                                        <FiSmartphone/>
+                                    </div>
+                                    <a href="https://wa.me/5546998775560" className='phone-ref'>
+                                        {contactInfoCellphone}
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div className="contact-field">
+                                <div className="value-contact">
+                                    <div className="icon">
+                                        <BsInstagram/>
+                                    </div>
+                                    <a href="https://www.instagram.com/flora.odontologia/" className='instagram-ref'>
+                                        {contactInfoInstagram}
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="contact-field">
+                                <div className="value-contact-last">
+                                    <div className="icon">
+                                        <FiMail/>
+                                    </div>
+                                    {contactInfoEmail}
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div className="info-field">
                         <img src={logo} alt='Logo'/>
                     </div>
                 </div>
             </div>
             <div className="column">
                 <div id="map" className="map-container">
-                    <div className='map-inner'>
-
-
-                    </div>
-
+                    <a href='https://www.google.com.br/maps/search/flora+odontologia/@-28.1615934,-48.6907556,18z?entry=ttu'>
+                        <img src={map} alt='Map' className='map-image'/>
+                    </a>
                 </div>
             </div>
         </section>

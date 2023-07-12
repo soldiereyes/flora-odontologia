@@ -7,7 +7,6 @@ import dra_imagem from './assets/dra_imagem.svg';
 // @ts-ignore
 import consultorio from './assets/consultorio.svg';
 //components
-import Contact from "./components/contact/Contact.tsx";
 import Navbar from "./components/navbar/Navbar.tsx";
 import SessionHeader from "./components/header-section/SessionHeader.tsx";
 import ExpertSection from "./components/expert-section/ExpertSection.tsx";
@@ -17,6 +16,7 @@ import BannerInto from "./components/banner-into/BannerInto.tsx";
 import CarouselServices from "./components/caroussel-services/CarouselServices.tsx";
 import Scheduling from "./components/scheduling/Scheduling.tsx";
 import WhatsAppButton from "./components/whatsapp-button/WhatsAppButton.tsx";
+import SpaceGallery from "./components/space-gallery/SpaceGallery.tsx";
 
 
 function App() {
@@ -45,28 +45,25 @@ function App() {
                     de São Paulo (ICMC-USP).'
                     />
                 </div>
-                <div id='section3'>
-                    <Scheduling
-                        title="AGENDE SUA CONSULTA"
-                        subtitle="Fale conosco e agende sua consulta."
-                    />
-                    <SessionHeader title="CONTATO"/>
-                    <Contact
-                        phone1="(46)33186640"
-                        phone2="(46)99877-5560"
-                        email="contato@floraodonto.com"
-                        instagram="@flora.odontologia"
-                        imageUrl={consultorio}
-                    />
+                <Scheduling
+                    title="AGENDE SUA CONSULTA"
+                    subtitle="Fale conosco e agende sua consulta."
+                />
+                <SessionHeader title="CONHEÇA NOSSO ESPAÇO"/>
+                <div id='section3' className='space-container'>
+                    <SpaceGallery/>
                 </div>
                 <div id='section4'>
                     <SessionHeader title="NOSSA LOCALIZAÇÃO"/>
                     <Location
-                        address="Av. Mal Floriano Peixoto, 233 - Curitiba-Paraná"
+                        address="Rua Ataíde Manoel da Rosa, 58 - Alto Arroio, Imbituba - SC"
                         openingHours="Segunda a Sexta das 9:00 às 17:00 horas"
                         openingHoursHoliday="Sábado das 9:00 às 12:00 horas"
                         technicalResponsible="Dra Tamires de Oliveira Silva CROSC 19.711"
-
+                        contactInfoCellphone="(48) 99127-5624"
+                        contactInfoInstagram="@flora.odontologia"
+                        contactInfoEmail="floraodonto@gmail.com"
+                        contactInfoPhone="(41) 3029-5624"
                     />
                 </div>
                 <Footer/>
