@@ -19,3 +19,26 @@
 .space-container:hover {
     transition: ease-in-out 0.9s;
 }
+
+@media only screen and (max-width: 576px) {
+    .space-container {
+        flex-direction: column;
+        height: auto;
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .column {
+        flex: none;
+        padding: 0;
+    }
+    #root {
+        max-width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+}
+

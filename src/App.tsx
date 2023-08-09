@@ -36,10 +36,11 @@ function App() {
                         imageUrl={dra_imagem}
                         description='Dra. Tamires Oliveira'
                         cro='CRO-SC 19.711'
-                        text='Cirurgiã-dentista (2014), mestre (2016) e doutora (2020) em Biofotônica Aplicada às Ciências
+                        text1='Cirurgiã-dentista (2014), mestre (2016) e doutora (2020) em Biofotônica Aplicada às Ciências
                     da Saúde pela Universidade Nove de Julho (UNINOVE). Têm experiência na área de Fototerapia com
                     ênfase em Terapia Antimicrobiana e atua principalmente nos seguintes temas: terapia fotodinâmica
-                    (PDT) e infecções fúngicas. Foi docente da Universidade Nove de Julho (2015-2020) nas disciplinas
+                    (PDT) e infecções fúngicas.'
+                        text2='Foi docente da Universidade Nove de Julho (2015-2020) nas disciplinas
                     de Atenção Básica. Têm experiência com metodologias ativas de ensino e realiza especialização em
                     Computação Aplicada à Educação pelo Instituto de Ciências Matemáticas e de Computação da Universidade
                     de São Paulo (ICMC-USP).'
