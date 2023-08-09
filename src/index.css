@@ -52,3 +52,11 @@
     background: var(--color-secondary);
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+    :root {
+        box-sizing:content-box;
+        margin: 0;
+        padding: 0;
+    }
+    }
