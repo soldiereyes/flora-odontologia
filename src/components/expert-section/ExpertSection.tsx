@@ -1,16 +1,16 @@
-
-import React, { useEffect, useRef, useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './ExpertSection.css';
 
 interface SectionProps {
     imageUrl: string;
-    text: string;
+    text1: string;
+    text2: string;
     text_additional?: string;
     description: string;
     cro?: string;
 }
 
-const ExpertSection: React.FC<SectionProps> = ({imageUrl, text, description,cro}) => {
+const ExpertSection: React.FC<SectionProps> = ({imageUrl, text1, description, cro, text2}) => {
 
     const [isVisible, setIsVisible] = useState(false);
     const componentRef = useRef<HTMLDivElement>(null);
@@ -33,7 +33,6 @@ const ExpertSection: React.FC<SectionProps> = ({imageUrl, text, description,cro}
     }, []);
 
 
-
     return (
         <section className="section-expert-section">
             <div className="column-1">
@@ -48,7 +47,14 @@ const ExpertSection: React.FC<SectionProps> = ({imageUrl, text, description,cro}
                 </div>
             </div>
             <div className="column-2">
-                <div className="text-expert-section">{text}</div>
+                <div className="text-expert-section">
+                    <div>
+                        {text1}
+                    </div>
+                    <div className= 'space-between-name'>
+                        {text2}
+                    </div>
+                </div>
             </div>
         </section>
     );

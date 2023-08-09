@@ -127,4 +127,9 @@
         font-size: 16px;
         font-weight: lighter;
     }
+
+    .info-field-inner {
+        display: block;
+
+    }
 }

@@ -68,6 +68,14 @@
     transition: ease-in-out 0.9s;
 }
 
+.space-between-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .text-expert-section:hover {
     transition: ease-in-out 0.9s;
     transform: scale(1.1);

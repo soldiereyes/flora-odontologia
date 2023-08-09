@@ -2,7 +2,7 @@ import React from 'react';
 import './Location.css';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import logo from '../../assets/logo.svg';
+import logo_sem_fundo from '../../assets/logo_sem_fundo.svg';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import map from '../../assets/map.svg';
@@ -53,53 +53,57 @@ const Location: React.FC<SectionProps> = ({
                         <div className="value">{technicalResponsible}</div>
                     </div>
                     <div className="info-field">
-                        <div className="label">Contato:</div>
+                        <div className="label-contato">Contato:</div>
                         <div className="info-field-inner">
-                            <div className="contact-field">
-                                <div className="value-contact">
-                                    <div className="icon">
-                                        <BsTelephone/>
-                                    </div>
-                                    {contactInfoPhone}
-                                </div>
-                            </div>
 
-                            <div className="contact-field">
-                                <div className="value-contact">
-                                    <div className="icon">
-                                        <FiSmartphone/>
+                            <div className="contact-field-collum1">
+                                <div className="contact-field">
+                                    <div className="value-contact">
+                                        <div className="icon">
+                                            <BsTelephone/>
+                                        </div>
+                                        {contactInfoPhone}
                                     </div>
-                                    <a href="https://wa.me/5546998775560" className='phone-ref'>
-                                        {contactInfoCellphone}
-                                    </a>
                                 </div>
 
-                            </div>
-                            <div className="contact-field">
-                                <div className="value-contact">
-                                    <div className="icon">
-                                        <BsInstagram/>
+                                <div className="contact-field">
+                                    <div className="value-contact">
+                                        <div className="icon">
+                                            <FiSmartphone/>
+                                        </div>
+                                        <a href="https://wa.me/5546998775560" className='phone-ref'>
+                                            {contactInfoCellphone}
+                                        </a>
                                     </div>
-                                    <a href="https://www.instagram.com/flora.odontologia/" className='instagram-ref'>
-                                        {contactInfoInstagram}
-                                    </a>
                                 </div>
                             </div>
-
-                            <div className="contact-field">
-                                <div className="value-contact-last">
-                                    <div className="icon">
-                                        <FiMail/>
+                            <div className="contact-field-collum2">
+                                <div className="contact-field">
+                                    <div className="value-contact">
+                                        <div className="icon">
+                                            <BsInstagram/>
+                                        </div>
+                                        <a href="https://www.instagram.com/flora.odontologia/"
+                                           className='instagram-ref'>
+                                            {contactInfoInstagram}
+                                        </a>
                                     </div>
-                                    {contactInfoEmail}
+                                </div>
+
+                                <div className="contact-field">
+                                    <div className="value-contact-last">
+                                        <div className="icon">
+                                            <FiMail/>
+                                        </div>
+                                        {contactInfoEmail}
+                                    </div>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
                     <div className="info-field">
-                        <img src={logo} alt='Logo'/>
+                        <img src={logo_sem_fundo} alt='Logo'/>
                     </div>
                 </div>
             </div>
