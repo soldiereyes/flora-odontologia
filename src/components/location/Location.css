@@ -111,10 +111,7 @@
     transition: ease-in-out 0.9s;
 }
 
-.map-image:hover {
-    transition: ease-in-out 0.9s;
-    transform: scale(1.05);
-}
+
 
 .phone-ref {
     color: var(--color-primary);
