@@ -1,19 +1,18 @@
 .sidebar {
     position: fixed;
     top: 0;
-    left: -300px; /* A sidebar começará fora da tela */
+    left: -300px;
     width: 300px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: left 0.3s ease;
-    z-index: 101; /* Colocando a sidebar acima da navbar */
+    background-color: var(--color-secondary);
+    transition: left 0.9s ease;
+    z-index: 101;
 }
 
 .sidebar.open {
-    left: 0; /* Abre a sidebar */
+    left: 0;
 }
 
-/* Estilos para os links na sidebar */
 .sidebar a {
     display: block;
     padding: 15px;
@@ -21,11 +20,6 @@
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
-
-.sidebar a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
 
 .close-icon {
     position: absolute;
