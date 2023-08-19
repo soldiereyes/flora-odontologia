@@ -1,0 +1,59 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* A sidebar começará fora da tela */
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: left 0.3s ease;
+    z-index: 101; /* Colocando a sidebar acima da navbar */
+}
+
+.sidebar.open {
+    left: 0; /* Abre a sidebar */
+}
+
+/* Estilos para os links na sidebar */
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-container {
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.icon-container svg {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.icon-container svg:hover {
+    color: rgba(255, 255, 255, 0.7);
+}

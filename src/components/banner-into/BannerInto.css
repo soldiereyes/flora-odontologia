@@ -51,7 +51,7 @@
 
 @media (max-width: 1200px) {
     .carousel-image {
-        margin-top: 8rem;
+        margin-top: 5rem;
         max-height: 400px;
         margin-bottom: 0;
     }

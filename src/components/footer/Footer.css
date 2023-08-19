@@ -2,7 +2,7 @@
     background-color: var(--color-secondary);
     padding: 20px;
     text-align: center;
-    height: 100px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
 @media (max-width: 576px) {
     .footer {
         flex-direction: column;
-        height: auto;
+        height: 100%;
 
     }
     .container p{

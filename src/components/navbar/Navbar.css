@@ -95,6 +95,11 @@
 }
 
 @media screen and (max-width: 576px) {
+    .navbar {
+        height: 5em;
+    }
+
+
     .navbar-container {
         flex-direction: row;
         justify-content: flex-start;
@@ -131,8 +136,8 @@
     }
 
     .navbar-logo img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         margin-left: 10px;
     }
 }

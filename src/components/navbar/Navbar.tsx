@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import {BiMenu} from 'react-icons/bi';
+import {BiMenu, BiX} from 'react-icons/bi';
 import {BsWhatsapp} from 'react-icons/bs';
 import {Link} from 'react-scroll';
 
 import './Navbar.css';
-
+import Sidebar from '../sidebar/Sidebar';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import logo from '../../assets/logo_sem_fundo.svg';
@@ -93,8 +93,9 @@ const Navbar: React.FC = () => {
                         </div>
                     </li>
                     <button className="menu-button" onClick={handleMenuClick}>
-                        <BiMenu/>
+                        {isMenuOpen ? <BiX/> :<BiMenu/> }
                     </button>
+                    <Sidebar isOpen={isMenuOpen}/>
                 </div>
             </div>
         </nav>
