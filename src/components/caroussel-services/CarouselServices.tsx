@@ -94,13 +94,16 @@ const CarouselServices = () => {
         };
     }, []);
 
+
     return (
             <motion.div className="carousel-services-container"
                         whileTap={{cursor: 'grabbing'}}>
                 <motion.div className="carousel-services-inner"
                             drag="x"
-                            dragConstraints={{left: -width, right: 0}}
                             dragElastic={0.1}
+                            animate={{ x: -width  - 600 }}
+                            transition={{ repeatType: 'reverse', duration: 30, ease: 'linear' }}
+                            dragConstraints={{ left: -width - 600, right: 0 }}
                 >
                     <div className="cards-services-container">
                         {services.map((service, index) => (

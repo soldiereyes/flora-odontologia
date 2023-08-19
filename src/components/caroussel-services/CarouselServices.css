@@ -8,6 +8,7 @@
 }
 
 .cards-services-container{
+    flex-direction: row;
     max-width: 100%;
     display: -webkit-box;
     justify-content: center;
