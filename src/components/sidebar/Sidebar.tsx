@@ -1,6 +1,7 @@
 import './Sidebar.css';
-import {FiHome, FiMapPin, FiSettings, FiUser} from "react-icons/fi";
+import {FiHome, FiMapPin, FiUser} from "react-icons/fi";
 import {Link} from "react-scroll";
+import {GrGallery} from "@react-icons/all-files/gr/GrGallery";
 
 const Sidebar = ({isOpen}: any) => {
     return (
@@ -21,7 +22,7 @@ const Sidebar = ({isOpen}: any) => {
                     smooth={true}
                     offset={-50}
                     duration={1000}>
-                    <FiSettings/>
+                    <FiUser/>
                 </Link>
                 <Link
                     to={'section3'}
@@ -29,7 +30,7 @@ const Sidebar = ({isOpen}: any) => {
                     smooth={true}
                     offset={-200}
                     duration={1000}>
-                    <FiUser/>
+                    <GrGallery/>
                 </Link>
                 <Link
                     to={'section4'}
