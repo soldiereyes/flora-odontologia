@@ -1,28 +1,24 @@
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 5rem;
-    margin-bottom: 5rem;
-    padding: 50px;
-
+    margin-bottom: 3rem;
 }
 .gallery-item {
-    width: 100%;
-    height: 90%;
+    width: 400px;
+    height: 400px;
     padding: 0;
 }
 
 .gallery-item img {
     width: 100%;
-    height: 90%;
+    height:100%;
     object-fit: cover;
     cursor: pointer;
-    transition: ease-in-out 0.9s;
 }
 
 .none  img:hover {
     pointer-events: none;
-
 }
 
 .gallery-item img:hover {
