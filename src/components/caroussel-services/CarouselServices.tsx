@@ -4,13 +4,28 @@ import {motion} from "framer-motion";
 //images
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import slide2 from "../../assets/slide2.svg";
+import clareamento from "../../assets/clareamento.svg";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import slide3 from "../../assets/slide3.svg";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import slide4 from "../../assets/slide4.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import tratamentodecanal from "../../assets/tratamentodecanal.svg";
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import coroasdentarias from "../../assets/coroasdentarias.svg";
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import tratamentoortodontico from "../../assets/tratamentoortodontico.svg";
+import tratmentodedoencasgengivais from "../../assets/tratmentodedoencasgengivais.svg";
+import dentadura from "../../assets/dentadura.svg";
+import cirurgiaoral from "../../assets/cirurgiaoral.svg";
+import pontedentaria from "../../assets/pontedentaria.svg";
 //components
 import Card from "../card-services/Cards.tsx";
 const CarouselServices = () => {
@@ -28,19 +43,19 @@ const CarouselServices = () => {
             title: 'Tratamento de Canal',
             description: 'Este tratamento é usado para remover tecido infectado ou danificado de dentro do dente.' +
                 'Geralmente é realizado quando uma cavidade não tratada se espalha para a polpa do dente.',
-            imageUrl: slide2,
+            imageUrl: tratamentodecanal,
         },
         {
             title: 'Coroas Dentárias',
             description: 'Uma coroa é uma capa que é colocada sobre um dente danificado para restaurar sua forma, ' +
                 'tamanho e força. As coroas são comumente usadas para dentes quebrados',
-            imageUrl: slide3,
+            imageUrl: coroasdentarias,
         },
         {
             title: 'Clareamento Dental',
             description: 'Este tratamento é usado para remover manchas e descoloração dos dentes. Pode ser feito no ' +
                 'consultório ou em casa com o uso de produtos clareadores.',
-            imageUrl: slide4,
+            imageUrl: clareamento,
         },
         {
             title: 'Implantes Dentários',
@@ -52,29 +67,29 @@ const CarouselServices = () => {
             title: 'Tratamento Ortodôntico',
             description: 'O tratamento ortodôntico envolve o uso de aparelhos ortodônticos ou alinhadores para' +
                 ' alinhar os dentes e corrigir problemas de mordida.',
-            imageUrl: slide2,
+            imageUrl: tratamentoortodontico,
         },
         {
             title: 'Tratamento de Doenças Gengivais',
             description: 'Este tratamento é usado para tratar e prevenir doenças gengivais. Pode envolver limpeza profunda,' +
                 ' raspagem e alisamento radicular, antibióticos ou cirurgia.',
-            imageUrl: slide2,
+            imageUrl: tratmentodedoencasgengivais,
         },
         {
             title: 'Dentaduras',
             description: 'Dentaduras são aparelhos removíveis usados para substituir dentes ausentes. Podem ser dentaduras parciais ou completas.',
-            imageUrl: slide2,
+            imageUrl: dentadura,
         },
         {
             title: 'Cirurgia oral',
             description: 'A cirurgia oral pode ser necessária para remover os dentes do siso, reparar uma lesão na mandíbula ou tratar um tumor ou cisto.',
-            imageUrl: slide2,
+            imageUrl: cirurgiaoral,
         },
         {
             title: 'Ponte dentária',
             description: 'as pontes são usadas para substituir um ou mais dentes ausentes. Elas são ancoradas aos dentes' +
                 ' adjacentes e geralmente são feitas de porcelana ou cerâmica.',
-            imageUrl: slide2,
+            imageUrl: pontedentaria,
         },
     ];
 
