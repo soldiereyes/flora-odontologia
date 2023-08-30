@@ -51,6 +51,9 @@
     animation: float 4s ease-in-out infinite;
 }
 
+.none {
+    pointer-events: none;
+}
 
 @keyframes float {
     0% {

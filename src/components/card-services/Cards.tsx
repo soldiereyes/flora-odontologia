@@ -9,12 +9,14 @@ interface CardProps {
     imageUrl: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, description, imageUrl}) => {
+const Card: React.FC<CardProps> = ({title, description, imageUrl}) => {
     return (
         <div className="slide">
             <h3>{title}</h3>
             <p>{description}</p>
-            <img src={imageUrl} alt={title} />
+            <div className='none'>
+                <img src={imageUrl} alt={title}/>
+            </div>
         </div>
     );
 };
