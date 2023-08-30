@@ -1,32 +1,18 @@
 import {useState, useEffect } from "react";
 import "./CarouselServices.css";
 import {motion} from "framer-motion";
-//images
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+
 import clareamento from "../../assets/clareamento.svg";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import slide3 from "../../assets/slide3.svg";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import slide4 from "../../assets/slide4.svg";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+import obturacaodentaria from "../../assets/obturacaodentaria.svg";
+import implantedentario from "../../assets/implantedentario.svg";
 import tratamentodecanal from "../../assets/tratamentodecanal.svg";
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import coroasdentarias from "../../assets/coroasdentarias.svg";
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import tratamentoortodontico from "../../assets/tratamentoortodontico.svg";
 import tratmentodedoencasgengivais from "../../assets/tratmentodedoencasgengivais.svg";
 import dentadura from "../../assets/dentadura.svg";
 import cirurgiaoral from "../../assets/cirurgiaoral.svg";
 import pontedentaria from "../../assets/pontedentaria.svg";
-//components
+
 import Card from "../card-services/Cards.tsx";
 const CarouselServices = () => {
 
@@ -37,7 +23,7 @@ const CarouselServices = () => {
             title: 'Obturações Dentárias',
             description: ' Este tratamento é usado para reparar uma cavidade em um dente. A parte deteriorada do dente ' +
                 'é removida e então preenchida com um material como resina composta.',
-            imageUrl: slide3,
+            imageUrl: obturacaodentaria,
         },
         {
             title: 'Tratamento de Canal',
@@ -61,7 +47,7 @@ const CarouselServices = () => {
             title: 'Implantes Dentários',
             description: 'Os implantes são usados para substituir dentes perdidos. Um pino de titânio é cirurgicamente ' +
                 'inserido no osso da mandíbula e um dente protético é fixado ao pino.',
-            imageUrl: slide4,
+            imageUrl: implantedentario,
         },
         {
             title: 'Tratamento Ortodôntico',
