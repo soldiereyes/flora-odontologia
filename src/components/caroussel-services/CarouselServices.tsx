@@ -2,15 +2,35 @@ import {useState, useEffect } from "react";
 import "./CarouselServices.css";
 import {motion} from "framer-motion";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import clareamento from "../../assets/clareamento.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import obturacaodentaria from "../../assets/obturacaodentaria.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import implantedentario from "../../assets/implantedentario.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import tratamentodecanal from "../../assets/tratamentodecanal.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import coroasdentarias from "../../assets/coroasdentarias.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import tratamentoortodontico from "../../assets/tratamentoortodontico.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import tratmentodedoencasgengivais from "../../assets/tratmentodedoencasgengivais.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import dentadura from "../../assets/dentadura.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import cirurgiaoral from "../../assets/cirurgiaoral.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import pontedentaria from "../../assets/pontedentaria.svg";
 
 import Card from "../card-services/Cards.tsx";

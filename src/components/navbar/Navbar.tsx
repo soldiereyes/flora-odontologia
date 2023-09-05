@@ -81,13 +81,13 @@ const Navbar: React.FC = () => {
                             duration={500}
                         >
                         </Link>
-                        <a href="https://wa.me/5546998775560" className='talk-to-me'>
+                        <a href="https://wa.me/554891275624" className='talk-to-me'>
                             Fale Comigo
                         </a>
                     </li>
                     <li className="navbar-item-container-icon">
                         <div className="navbar-item-icon">
-                            <a className="bs-button" href="https://wa.me/5546998775560">
+                            <a className="bs-button" href="https://wa.me/554891275624">
                                 <BsWhatsapp/>
                             </a>
                         </div>

@@ -71,7 +71,7 @@ const Location: React.FC<SectionProps> = ({
                                         <div className="icon">
                                             <FiSmartphone/>
                                         </div>
-                                        <a href="https://wa.me/5546998775560" className='phone-ref'>
+                                        <a href="https://wa.me/554891275624" className='phone-ref'>
                                             {contactInfoCellphone}
                                         </a>
                                     </div>
