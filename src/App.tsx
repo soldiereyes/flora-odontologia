@@ -2,7 +2,7 @@ import './App.css'
 //images
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import dra_imagem from './assets/dra_imagem.svg';
+import dra_imagem from './assets/dra_imagem.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import consultorio from './assets/consultorio.svg';
@@ -34,16 +34,13 @@ function App() {
                     <SessionHeader title="NOSSA ESPECIALISTA"/>
                     <ExpertSection
                         imageUrl={dra_imagem}
-                        description='Dra. Tamires Oliveira'
-                        cro='CRO-SC 19.711'
-                        text1='Cirurgiã-dentista (2014), mestre (2016) e doutora (2020) em Biofotônica Aplicada às Ciências
-                    da Saúde pela Universidade Nove de Julho (UNINOVE). Têm experiência na área de Fototerapia com
-                    ênfase em Terapia Antimicrobiana e atua principalmente nos seguintes temas: terapia fotodinâmica
-                    (PDT) e infecções fúngicas.'
-                        text2='Foi docente da Universidade Nove de Julho (2015-2020) nas disciplinas
-                    de Atenção Básica. Têm experiência com metodologias ativas de ensino e realiza especialização em
-                    Computação Aplicada à Educação pelo Instituto de Ciências Matemáticas e de Computação da Universidade
-                    de São Paulo (ICMC-USP).'
+                        description='Dra. Luiza de Araujo Quevedo'
+                        cro='CRO-SC 23.486'
+                        text1='Formada pela PUCRS, uma das melhores graduações de odontologia do Brasil.
+                        Possui cursos de atualização estomatologia, capacitação em cirurgia e imersão em facetas.
+                        Atuou como clínica geral em Porto Alegre e cidades vizinhas antes de se mudar para Imbituba.'
+                        text2='Apaixonada pela odontologia e em cuidar dos pacientes de forma integral,
+                        com um atendimento humanizado e personalizado, focando nas necessidades individuais de cada paciente.'
                     />
                 </div>
                 <Scheduling
@@ -60,10 +57,10 @@ function App() {
                         address="Rua Ataíde Manoel da Rosa, 58 - Alto Arroio, Imbituba - SC"
                         openingHours="Segunda a Sexta das 9:00 às 17:00 horas"
                         openingHoursHoliday="Sábado das 9:00 às 12:00 horas"
-                        technicalResponsible="Dra Tamires de Oliveira Silva CROSC 19.711"
+                        technicalResponsible="Dra. Luiza de Araujo Quevedo CROSC 23.486"
                         contactInfoCellphone="(48) 99127-5624"
                         contactInfoInstagram="@flora.odontologia"
-                        contactInfoEmail="floraodonto@gmail.com"
+                        contactInfoEmail="flora.odontologias2@gmail.com"
                         contactInfoPhone="(41) 3029-5624"
                     />
                 </div>
