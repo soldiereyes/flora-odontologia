@@ -19,7 +19,17 @@
 }
 
 .navbar-logo {
-    font-size: 10px;
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar-logo img {
+    width: 150px;
+    height: auto;
 }
 
 
@@ -39,11 +49,11 @@
 
 .navbar-item-icon {
     margin-right: 10px;
-    font-size:30px ;
+    font-size: 30px;
     color: var(--color-primary);
 }
 
-.navbar-item-container-icon{
+.navbar-item-container-icon {
     display: flex;
     align-items: center;
     animation: bounce 1s ease-in-out infinite;
@@ -67,11 +77,11 @@
     display: none;
 }
 
-.bs-button{
+.bs-button {
     color: rgb(37, 211, 102);
 }
 
-.talk-to-me{
+.talk-to-me {
     color: var(--color-primary);
     font-size: 18px;
     font-family: 'Ysabeau SC', sans-serif;
@@ -122,6 +132,7 @@
         transition: all 0.3s ease;
         margin-left: 200px;
     }
+
     .navbar-menu {
         list-style-type: none;
         display: flex;
@@ -131,7 +142,7 @@
         align-items: center;
     }
 
-    .navbar-item-container-icon{
+    .navbar-item-container-icon {
         display: none;
     }
 

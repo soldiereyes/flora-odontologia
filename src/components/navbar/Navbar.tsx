@@ -7,7 +7,7 @@ import './Navbar.css';
 import Sidebar from '../sidebar/Sidebar';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import logo from '../../assets/logo_sem_fundo.svg';
+import logo from '../../assets/logo_nova.png';
 
 
 const Navbar: React.FC = () => {

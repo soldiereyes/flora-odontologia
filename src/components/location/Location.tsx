@@ -2,7 +2,7 @@ import React from 'react';
 import './Location.css';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import logo_sem_fundo from '../../assets/logo_sem_fundo.svg';
+import logo_nova from '../../assets/logo_nova.png';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import map from '../../assets/map.svg';
@@ -103,7 +103,7 @@ const Location: React.FC<SectionProps> = ({
                         </div>
                     </div>
                     <div className="info-field">
-                        <img src={logo_sem_fundo} alt='Logo'/>
+                        <img src={logo_nova} alt='Logo'/>
                     </div>
                 </div>
             </div>
