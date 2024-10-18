@@ -23,17 +23,17 @@
 .info-field {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza a imagem horizontalmente */
-    justify-content: center; /* Centraliza a imagem verticalmente */
+    align-items: center;
+    justify-content: center;
     margin-bottom: 2em;
-    padding: 10px; /* Ajusta o espaçamento interno */
+    padding: 10px;
 }
 
 
 .info-field img {
-    max-width: 100%; /* Garante que a logo não ultrapasse o container */
-    height: auto; /* Mantém a proporção da logo */
-    width: 200px; /* Tamanho da logo ajustável conforme necessário */
+    max-width: 100%;
+    height: auto;
+    width: 200px;
 }
 
 .info-field-inner {
