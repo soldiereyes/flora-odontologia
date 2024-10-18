@@ -1,4 +1,4 @@
-import {useState, useEffect } from "react";
+import {useState, useEffect} from "react";
 import "./CarouselServices.css";
 import {motion} from "framer-motion";
 
@@ -34,33 +34,36 @@ import cirurgiaoral from "../../assets/cirurgiaoral.svg";
 import pontedentaria from "../../assets/pontedentaria.svg";
 
 import Card from "../card-services/Cards.tsx";
+
 const CarouselServices = () => {
 
     const [width, setWidth] = useState(0);
 
     const services = [
         {
-            title: 'Obturações Dentárias',
-            description: ' Este tratamento é usado para reparar uma cavidade em um dente. A parte deteriorada do dente ' +
-                'é removida e então preenchida com um material como resina composta.',
+            title: 'Restaurações',
+            description: ' Tratamento que repara dentes danificados por cáries, traumas ou desgaste ' +
+                'Normalmente envolve a remoção da parte deteriorada do dente e a aplicação de um material de restauração ' +
+                '(como resina ou amálgama) para reconstruir a forma e função do dente.',
+            imageUrl: clareamento,
+        },
+        {
+            title: 'Extrações',
+            description: 'Procedimento de remoção de um dente,' +
+                ' geralmente devido a cárie grave, infecção, dentes impactados (como os sisos) ' +
+                'ou superlotação na arcada dentária.',
+            imageUrl: cirurgiaoral,
+        },
+        {
+            title: 'Tratamento Periodontal',
+            description: 'Tratamento das doenças da gengiva e dos ossos que suportam os dentes (periodonto).' +
+                ' Envolve desde a remoção de placa e tártaro até procedimentos cirúrgicos para regenerar o tecido perdido.',
             imageUrl: obturacaodentaria,
         },
         {
-            title: 'Tratamento de Canal',
-            description: 'Este tratamento é usado para remover tecido infectado ou danificado de dentro do dente.' +
-                'Geralmente é realizado quando uma cavidade não tratada se espalha para a polpa do dente.',
-            imageUrl: tratamentodecanal,
-        },
-        {
-            title: 'Coroas Dentárias',
-            description: 'Uma coroa é uma capa que é colocada sobre um dente danificado para restaurar sua forma, ' +
-                'tamanho e força. As coroas são comumente usadas para dentes quebrados',
-            imageUrl: coroasdentarias,
-        },
-        {
-            title: 'Clareamento Dental',
-            description: 'Este tratamento é usado para remover manchas e descoloração dos dentes. Pode ser feito no ' +
-                'consultório ou em casa com o uso de produtos clareadores.',
+            title: 'Profilaxia',
+            description: 'Higienização profunda dos dentes feita no consultório para remover tártaro, placa bacteriana e' +
+                ' manchas superficiais. Ajuda na prevenção de cáries, gengivites e outras doenças bucais.',
             imageUrl: clareamento,
         },
         {
@@ -82,19 +85,23 @@ const CarouselServices = () => {
             imageUrl: tratmentodedoencasgengivais,
         },
         {
-            title: 'Dentaduras',
-            description: 'Dentaduras são aparelhos removíveis usados para substituir dentes ausentes. Podem ser dentaduras parciais ou completas.',
+            title: 'Próteses',
+            description: 'Substituição de dentes perdidos ou gravemente danificados por dentes artificiais.' +
+                ' Pode ser prótese fixa (como coroas e pontes) ou removível (como dentaduras).\n' +
+                '\n',
             imageUrl: dentadura,
         },
         {
-            title: 'Cirurgia oral',
-            description: 'A cirurgia oral pode ser necessária para remover os dentes do siso, reparar uma lesão na mandíbula ou tratar um tumor ou cisto.',
-            imageUrl: cirurgiaoral,
+            title: 'Tratamento Endodôntico',
+            description: 'Procedimento que trata a polpa do dente (nervo) infectada ou inflamada.' +
+                ' O canal radicular é limpo, desinfectado e preenchido, preservando o dente natural.',
+            imageUrl: tratamentodecanal,
         },
         {
-            title: 'Ponte dentária',
-            description: 'as pontes são usadas para substituir um ou mais dentes ausentes. Elas são ancoradas aos dentes' +
-                ' adjacentes e geralmente são feitas de porcelana ou cerâmica.',
+            title: 'Placas de Bruxismo',
+            description: 'Dispositivo usado durante o sono para prevenir o desgaste dentário e alívio de dores associadas' +
+                ' ao bruxismo (hábito de ranger ou apertar os dentes), protegendo os dentes e relaxando a musculatura.\n' +
+                '\n',
             imageUrl: pontedentaria,
         },
     ];
@@ -102,7 +109,7 @@ const CarouselServices = () => {
     useEffect(() => {
         const handleResize = (): void => {
             const carouselInner = document.querySelector('.carousel-services-inner') as HTMLElement;
-            console.log("carrousel inner",carouselInner);
+            console.log("carrousel inner", carouselInner);
             if (carouselInner) {
                 setWidth(carouselInner.offsetWidth);
             }
@@ -117,27 +124,27 @@ const CarouselServices = () => {
 
 
     return (
-            <motion.div className="carousel-services-container"
-                        whileTap={{cursor: 'grabbing'}}>
-                <motion.div className="carousel-services-inner"
-                            drag="x"
-                            dragElastic={0.1}
-                            animate={{ x: -width  - 600 }}
-                            transition={{ repeatType: 'reverse', duration: 30, ease: 'linear' }}
-                            dragConstraints={{ left: -width - 600, right: 0 }}
-                >
-                    <div className="cards-services-container">
-                        {services.map((service, index) => (
-                            <Card
-                                key={index}
-                                title={service.title}
-                                description={service.description}
-                                imageUrl={service.imageUrl}
-                            />
-                        ))}
-                    </div>
-                </motion.div>
+        <motion.div className="carousel-services-container"
+                    whileTap={{cursor: 'grabbing'}}>
+            <motion.div className="carousel-services-inner"
+                        drag="x"
+                        dragElastic={0.1}
+                        animate={{x: -width - 600}}
+                        transition={{repeatType: 'reverse', duration: 30, ease: 'linear'}}
+                        dragConstraints={{left: -width - 600, right: 0}}
+            >
+                <div className="cards-services-container">
+                    {services.map((service, index) => (
+                        <Card
+                            key={index}
+                            title={service.title}
+                            description={service.description}
+                            imageUrl={service.imageUrl}
+                        />
+                    ))}
+                </div>
             </motion.div>
+        </motion.div>
     );
 };
 
