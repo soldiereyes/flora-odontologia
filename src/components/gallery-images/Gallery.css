@@ -30,8 +30,7 @@
 
 @media screen and (max-width: 768px) {
     .gallery-container {
-        grid-template-columns: repeat(3, 1fr);
-        margin: 0;
+       display: none;
     }
 
     .gallery-item {
