@@ -20,6 +20,12 @@
     transition: ease-in-out 0.9s;
 }
 
+@media (max-width: 768px) {
+    #session-header {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .space-container {
         flex-direction: column;
@@ -38,7 +44,6 @@
         margin: 0;
         padding: 0;
     }
-
 
 }
 

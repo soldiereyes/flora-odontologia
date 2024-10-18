@@ -47,9 +47,11 @@ function App() {
                     title="AGENDE SUA CONSULTA"
                     subtitle="Fale conosco e agende sua consulta."
                 />
+                <div id= 'session-header'>
                 <SessionHeader title="CONHEÇA NOSSO ESPAÇO"/>
                 <div id='section3' className='space-container'>
                     <SpaceGallery/>
+                </div>
                 </div>
                 <div id='section4'>
                     <SessionHeader title="NOSSA LOCALIZAÇÃO"/>
