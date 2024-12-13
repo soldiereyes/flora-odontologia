@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import {BiMenu, BiX} from 'react-icons/bi';
-import {BsWhatsapp} from 'react-icons/bs';
-import {Link} from 'react-scroll';
+import React, { useState } from 'react';
+import { BiMenu, BiX } from 'react-icons/bi';
+import { BsWhatsapp } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 import './Navbar.css';
 import Sidebar from '../sidebar/Sidebar';
@@ -9,93 +9,83 @@ import Sidebar from '../sidebar/Sidebar';
 // @ts-ignore
 import logo from '../../assets/logo_nova.png';
 
-
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const handleMenuClick = () => {
         setIsMenuOpen(!isMenuOpen);
-    }
+    };
 
     return (
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <img src={logo} alt="Logo"/>
+                    <img src={logo} alt="Logo" />
                 </div>
                 <div className="navbar-menu">
                     <li className="navbar-item">
                         <Link
                             activeClass="active"
-                            to="section1"
+                            to="services"
                             spy={true}
                             smooth={true}
                             offset={-180}
                             duration={700}
                         >
-                            Serviços
+                            SERVIÇOS
                         </Link>
                     </li>
                     <li className="navbar-item">
                         <Link
                             activeClass="active"
-                            to="section2"
+                            to="professional"
                             spy={true}
                             smooth={true}
                             offset={-180}
                             duration={700}
                         >
-                            Especialista
+                            PROFISSIONAL
                         </Link>
                     </li>
                     <li className="navbar-item">
                         <Link
                             activeClass="active"
-                            to="section3"
+                            to="office"
                             spy={true}
                             smooth={true}
                             offset={-250}
                             duration={900}
                         >
-                            Estrutura
+                            CONSULTÓRIO
                         </Link>
                     </li>
                     <li className="navbar-item">
                         <Link
                             activeClass="active"
-                            to="section4"
+                            to="location"
                             spy={true}
                             smooth={true}
                             offset={-180}
                             duration={900}
                         >
-                            Localização
+                            LOCALIZAÇÃO
                         </Link>
                     </li>
                     <li className="navbar-item">
-                        <Link
-                            activeClass="active"
-                            to="section4"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                        </Link>
-                        <a href="https://wa.me/554891275624" className='talk-to-me'>
-                            Fale Comigo
+                        <a href="https://wa.me/554891275624" className="talk-to-me">
+                            FALE COMIGO
                         </a>
                     </li>
                     <li className="navbar-item-container-icon">
                         <div className="navbar-item-icon">
                             <a className="bs-button" href="https://wa.me/554891275624">
-                                <BsWhatsapp/>
+                                <BsWhatsapp />
                             </a>
                         </div>
                     </li>
                     <button className="menu-button" onClick={handleMenuClick}>
-                        {isMenuOpen ? <BiX/> :<BiMenu/> }
+                        {isMenuOpen ? <BiX /> : <BiMenu />}
                     </button>
-                    <Sidebar isOpen={isMenuOpen}/>
+                    <Sidebar isOpen={isMenuOpen} />
                 </div>
             </div>
         </nav>
