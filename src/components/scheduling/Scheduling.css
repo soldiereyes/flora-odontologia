@@ -41,11 +41,6 @@
     background-color: white;
 }
 
-button-call-to-action:hover {
-    background-color: white;
-    color: var(--color-secondary);
-    text-decoration: none;
-}
 
 @media only screen and (max-width: 576px) {
     .call-to-action {
