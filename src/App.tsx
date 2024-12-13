@@ -10,7 +10,6 @@ import ExpertSection from "./components/expert-section/ExpertSection";
 import Location from "./components/location/Location";
 import Footer from "./components/footer/Footer";
 import BannerInto from "./components/banner-into/BannerInto";
-import Scheduling from "./components/scheduling/Scheduling";
 import WhatsAppButton from "./components/whatsapp-button/WhatsAppButton";
 import SpaceGallery from "./components/space-gallery/SpaceGallery";
 import ServiceGrid from "./components/service-grid/ServiceGrid.tsx";
@@ -38,10 +37,6 @@ function App() {
                         com um atendimento humanizado e personalizado, focando nas necessidades individuais de cada paciente.'
                     />
                 </div>
-                <Scheduling
-                    title="AGENDE SUA CONSULTA"
-                    subtitle="Fale conosco e agende sua consulta."
-                />
                 <div id="section3">
                     <SessionHeader title="CONHEÇA NOSSO ESPAÇO" />
                     <div className="space-container">
