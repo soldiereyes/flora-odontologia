@@ -1,92 +1,35 @@
-.app {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 3px solid var(--color-primary);
 }
 
-.slide {
-    width: 20%;
-    height: 30rem;
-    background-color: #ffffff;
-    transition: ease-in-out 0.9s;
-    padding: 40px 0 ;
-    border-radius: 10px;
-    margin: 30px;
-}
-
-.slide:hover {
-    transition: ease-in-out 0.9s;
-    transform: scale(1.05);
-    border: 1px solid var(--color-primary);
-    background-color: var(--color-sixth);
-}
-
-.slide h3 {
+.card h3 {
     font-size: 24px;
-    margin-bottom: 5px;
     color: var(--color-primary);
     font-family: 'Ysabeau SC', sans-serif;
-    text-decoration: underline;
+    margin: 8px 0;
 }
-
-.slide p {
-    font-size: 16px;
-    color: var(--color-secondary);
-    font-family: 'Ysabeau SC', sans-serif;
-    margin-bottom: 5px;
-    padding: 10px;
-}
-
-.slide img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 1.5rem;
-
-}
-
-.slide img:hover {
-    transform: translateY(0);
-    animation: float 4s ease-in-out infinite;
-}
-
-.none {
-    pointer-events: none;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
+@media screen and (max-width: 1200px) {
+    .card img {
+        width: 120px;
+        height: 120px;
     }
 }
 
-@media (max-width: 576px) {
-    .slide {
-        width: 50%;
-        height: 18rem;
+@media screen and (max-width: 768px) {
+    .card img {
+        width: 100px;
+        height: 100px;
     }
+}
 
-    .slide h3 {
-        font-size: 1rem;
-        margin-bottom: 0.3rem;
-    }
-
-    .slide p {
-        display: none;
-    }
-
-    .slide img {
-        width: 150px;
-        height: 150px;
-        margin-top: 1rem;
+@media screen and (max-width: 576px) {
+    .card img {
+        width: 80px;
+        height: 80px;
     }
 }
