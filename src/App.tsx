@@ -1,29 +1,24 @@
-import './App.css'
+import './App.css';
 //images
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import dra_imagem from './assets/dra_imagem.png';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import consultorio from './assets/consultorio.svg';
 //components
-import Navbar from "./components/navbar/Navbar.tsx";
-import SessionHeader from "./components/header-section/SessionHeader.tsx";
-import ExpertSection from "./components/expert-section/ExpertSection.tsx";
-import Location from "./components/location/Location.tsx";
-import Footer from "./components/footer/Footer.tsx";
-import BannerInto from "./components/banner-into/BannerInto.tsx";
-import CarouselServices from "./components/caroussel-services/CarouselServices.tsx";
-import Scheduling from "./components/scheduling/Scheduling.tsx";
-import WhatsAppButton from "./components/whatsapp-button/WhatsAppButton.tsx";
-import SpaceGallery from "./components/space-gallery/SpaceGallery.tsx";
-
+import Navbar from "./components/navbar/Navbar";
+import SessionHeader from "./components/header-section/SessionHeader";
+import ExpertSection from "./components/expert-section/ExpertSection";
+import Location from "./components/location/Location";
+import Footer from "./components/footer/Footer";
+import BannerInto from "./components/banner-into/BannerInto";
+import CarouselServices from "./components/caroussel-services/CarouselServices";
+import Scheduling from "./components/scheduling/Scheduling";
+import WhatsAppButton from "./components/whatsapp-button/WhatsAppButton";
+import SpaceGallery from "./components/space-gallery/SpaceGallery";
 
 function App() {
-
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <section className="content">
                 <BannerInto/>
                 <div id='section1'>
@@ -47,11 +42,11 @@ function App() {
                     title="AGENDE SUA CONSULTA"
                     subtitle="Fale conosco e agende sua consulta."
                 />
-                <div id= 'session-header'>
-                <SessionHeader title="CONHEÇA NOSSO ESPAÇO"/>
-                <div id='section3' className='space-container'>
-                    <SpaceGallery/>
-                </div>
+                <div id="section3">
+                    <SessionHeader title="CONHEÇA NOSSO ESPAÇO" />
+                    <div className="space-container">
+                        <SpaceGallery />
+                    </div>
                 </div>
                 <div id='section4'>
                     <SessionHeader title="NOSSA LOCALIZAÇÃO"/>
@@ -70,7 +65,7 @@ function App() {
                 <WhatsAppButton/>
             </section>
         </>
-    )
+    );
 }
 
-export default App
+export default App;
