@@ -27,8 +27,8 @@
 .button-call-to-action {
     display: inline-block;
     padding: 20px 50px;
-    background-color: rgb(37, 211, 102);
-    color: var(--color-sixth) ;
+    background-color: var(--color-sixth);
+    color: var(--color-primary) ;
     text-decoration: none;
     border-radius: 40px;
     font-family: 'Ysabeau SC 400', sans-serif;
