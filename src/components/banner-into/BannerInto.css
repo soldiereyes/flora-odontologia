@@ -4,6 +4,18 @@
     margin-top: 8em;
     margin-bottom: 4rem;
     max-height: 850px;
+    overflow: hidden;
+}
+
+.carousel-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Cor preta com 40% de opacidade */
+    z-index: 1; /* Coloca o overlay abaixo do texto */
 }
 
 .carousel-image img {
@@ -11,67 +23,44 @@
     width: 100%;
     max-width: 100%;
     max-height: 100%;
+    position: relative;
+    z-index: 0; /* Imagem abaixo do overlay */
 }
 
 .carousel-caption {
     position: absolute;
-    top: 50vh;
-    left: 25vh;
-    text-align: initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
-    width: 1200px;
+    width: 90%;
+    z-index: 2; /* Texto acima do overlay */
 }
 
 .carousel-caption h1 {
-    font-size: 64px;
+    font-size: 4vw;
     padding: 10px;
     animation-name: fadeIn;
     animation-duration: 3s;
-    font-family: 'Ysabeau SC',  sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
 }
 
 .carousel-caption h2 {
-    font-size: 36px;
+    font-size: 2vw;
     padding: 10px;
     animation-name: fadeIn;
     animation-duration: 3s;
     font-family: 'Ysabeau SC', sans-serif;
     font-weight: lighter;
-
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 @media (max-width: 1200px) {
-    .carousel-image {
-        margin-top: 5rem;
-        max-height: 400px;
-        margin-bottom: 0;
-    }
-
-    .carousel-caption {
-        position: absolute;
-        top: 100px;
-        left: 25px;
-        text-align: initial;
-        color: white;
-        width: 90%;
-    }
-
     .carousel-caption h1 {
-        font-size: 24px;
-        padding: 5px;
+        font-size: 6vw;
     }
 
     .carousel-caption h2 {
-        font-size: 16px;
-        padding: 5px;
+        font-size: 3.5vw;
     }
 }
