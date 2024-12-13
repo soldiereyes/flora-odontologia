@@ -1,43 +1,75 @@
 .section-expert-section {
     display: flex;
-    height: 100%;
+    flex-direction: column; /* Permite que a column-3 fique abaixo */
     width: 100%;
     padding: 7rem;
     margin-top: 2rem;
+    background-color: #e0f7e9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Alinha horizontalmente ao centro */
+    gap: 2rem; /* Espaçamento entre os elementos */
+}
+
+.column-1-and-2 {
+    display: flex; /* Organiza column-1 e column-2 lado a lado */
+    width: 100%;
+    justify-content: space-around; /* Espaça as colunas */
+    align-items: flex-start; /* Alinha ao topo */
 }
 
 .column-1 {
     flex: 1;
     display: flex;
-    align-items: center;
-
-}
-
-.column-2 {
-    flex: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content-name-image {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0;
 }
 
-.content-name-image.visible {
-    opacity: 1;
-}
-
-.card-inner-expert-section {
+.column-2 {
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: end;
-    height: 100%;
+    justify-content: center;
+}
+
+.column-3 {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    margin-top: 2rem;
+}
+
+
+.text-expert-section {
+    font-size: 20px;
+    color: var(--color-primary);
+    width: 900px;
+    text-align: justify;
+    padding: 0 50px 50px 50px;
+    font-family: 'Ysabeau Infant 100', sans-serif;
+    border-radius: 10px;
+    transition: none;
+    transform: none;
+}
+
+
+.description-expert-section {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--color-primary);
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.description-expert-section-cro {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--color-primary);
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .circle {
@@ -57,62 +89,11 @@
     border-radius: 50%;
 }
 
-.text-expert-section {
-    font-size: 20px;
-    color: var(--color-primary);
-    width: 900px;
-    text-indent:initial;
-    text-align: justify;
-    padding: 50px;
-    font-family: 'Ysabeau Infant 100', sans-serif;
-    border-radius: 10px;
-    transition: ease-in-out 0.9s;
-}
-
-.space-between-name{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.text-expert-section:hover {
-    transition: ease-in-out 0.9s;
-    transform: scale(1.1);
-    background-color: var(--color-sixth);
-    border: 1px solid var(--color-primary);
-}
-
-.description-expert-section {
-    font-size: 24px;
-    margin-top: 10px;
-    text-align: center;
-    color: var(--color-primary);
-    font-family: 'Ysabeau SC', sans-serif;
-}
-.description-expert-section-cro{
-    font-size: 16px;
-    margin-top: 10px;
-    text-align: center;
-    color: var(--color-primary);
-    font-family: 'Helvetica Neue',  sans-serif;
-    font-weight: lighter;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 @media (max-width: 576px) {
     .section-expert-section {
         padding: 2rem;
         margin-top: 1em;
         display: block;
-
-    }
-
-    .column-1,
-    .column-2 {
-        margin-bottom: 1rem;
     }
 
     .circle {
@@ -139,14 +120,4 @@
         font-size: 12px;
         margin-top: 5px;
     }
-    .card-inner-expert-section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-    }
-
 }
-
-

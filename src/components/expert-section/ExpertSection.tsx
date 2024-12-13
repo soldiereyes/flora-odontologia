@@ -1,5 +1,6 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './ExpertSection.css';
+import Scheduling from "../scheduling/Scheduling";
 
 interface SectionProps {
     imageUrl: string;
@@ -10,8 +11,7 @@ interface SectionProps {
     cro?: string;
 }
 
-const ExpertSection: React.FC<SectionProps> = ({imageUrl, text1, description, cro, text2}) => {
-
+const ExpertSection: React.FC<SectionProps> = ({ imageUrl, text1, description, cro, text2 }) => {
     const [isVisible, setIsVisible] = useState(false);
     const componentRef = useRef<HTMLDivElement>(null);
 
@@ -32,29 +32,32 @@ const ExpertSection: React.FC<SectionProps> = ({imageUrl, text1, description, cr
         };
     }, []);
 
-
     return (
         <section className="section-expert-section">
-            <div className="column-1">
-                <div className="card-inner-expert-section">
-                    <div className={`content-name-image ${isVisible ? 'visible' : ''}`} ref={componentRef}>
-                        <div className="circle">
-                            <img src={imageUrl} alt="Imagem" className="image"/>
+            <div className="column-1-and-2">
+                <div className="column-1">
+                    <div className="card-inner-expert-section">
+                        <div
+                            className={`content-name-image ${isVisible ? 'visible' : ''}`}
+                            ref={componentRef}
+                        >
+                            <div className="circle">
+                                <img src={imageUrl} alt="Imagem" className="image" />
+                            </div>
+                            <div className="description-expert-section">{description}</div>
+                            <div className="description-expert-section-cro">{cro}</div>
                         </div>
-                        <div className='description-expert-section'>{description}</div>
-                        <div className='description-expert-section-cro'>{cro}</div>
+                    </div>
+                </div>
+                <div className="column-2">
+                    <div className="text-expert-section">
+                        <div>{text1}</div>
+                        <div className="space-between-name">{text2}</div>
                     </div>
                 </div>
             </div>
-            <div className="column-2">
-                <div className="text-expert-section">
-                    <div>
-                        {text1}
-                    </div>
-                    <div className= 'space-between-name'>
-                        {text2}
-                    </div>
-                </div>
+            <div className="column-3">
+                <Scheduling />
             </div>
         </section>
     );
